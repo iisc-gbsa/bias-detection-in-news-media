@@ -74,7 +74,7 @@ except ImportError:
 
 
 class BiasKeywords:
-    """Comprehensive bias keyword dictionaries based on IndiBias framework"""
+    """Comprehensive bias keyword dictionaries based on framework"""
 
     def __init__(self):
         # Gender Keywords
