@@ -1,50 +1,3 @@
-"""
-Comprehensive Bias Detection System for News Articles
-Combines topic classification with multi-dimensional bias analysis
-
-ENSEMBLE APPROACH FOR IMPROVED BIAS DETECTION:
-==============================================
-
-This module uses a sophisticated ensemble approach combining three complementary methods:
-
-1. **Keyword Weighted Score (30%)**
-   - Simple and interpretable keyword matching
-   - Counts occurrences of curated bias-specific keywords
-   - Normalized by text length and keyword list size
-   - Fast and efficient for quick baseline assessment
-
-2. **TF-IDF Weighted Score (30%)**
-   - Uses Term Frequency-Inverse Document Frequency
-   - Weighs keywords by their importance in the document
-   - Calculates cosine similarity between article and keyword groups
-   - Efficient for batch processing and handles term importance
-
-3. **BERT Embedding Similarity (40%)**
-   - Uses sentence-transformers (all-MiniLM-L6-v2 model)
-   - Captures semantic context and meaning beyond exact keyword matches
-   - Computes cosine similarity between article and ideological embeddings
-   - Most powerful but computationally intensive
-
-ADVANTAGES:
------------
-- **Robustness**: Combines multiple signals reduces false positives/negatives
-- **Context-Aware**: BERT embeddings capture semantic meaning
-- **Interpretability**: Keyword scores provide transparency
-- **Efficiency**: TF-IDF balances speed with sophistication
-- **Adaptability**: Ensemble weights can be adjusted per use case
-
-BIAS DETECTION DIMENSIONS:
---------------------------
-- Political (left/right/centrist)
-- Gender (male/female bias with stereotype detection)
-- Religious (multi-faith with stereotype detection)
-- Caste (upper/lower caste focus)
-- Regional (geographic bias detection)
-- Socioeconomic (wealth/poverty focus)
-
-Each dimension uses the ensemble approach to produce more accurate bias scores.
-"""
-
 from catogorise_the_article import (
     EnsembleTopicClassifier,
     create_ensemble_topic_classifier,
@@ -58,17 +11,21 @@ from collections import Counter
 from typing import Dict, List, Tuple
 import csv
 import warnings
-warnings.filterwarnings('ignore')
+
+warnings.filterwarnings("ignore")
 
 # TF-IDF and ML imports
 
 # BERT embeddings
 try:
     from sentence_transformers import SentenceTransformer
+
     BERT_AVAILABLE = True
 except ImportError:
     BERT_AVAILABLE = False
-    print("Warning: sentence-transformers not available. Install with: pip install sentence-transformers")
+    print(
+        "Warning: sentence-transformers not available. Install with: pip install sentence-transformers"
+    )
 
 # Import topic classification from existing script
 
@@ -335,7 +292,6 @@ class BiasKeywords:
                 "climate action",
                 "workers rights",
                 "anti-discrimination",
-
             ],
             "right_leaning": [
                 "nationalism",
@@ -387,16 +343,13 @@ class BiasDetector:
 
         # Initialize TF-IDF vectorizer
         self.tfidf_vectorizer = TfidfVectorizer(
-            max_features=5000,
-            ngram_range=(1, 2),
-            stop_words='english',
-            lowercase=True
+            max_features=5000, ngram_range=(1, 2), stop_words="english", lowercase=True
         )
 
         # Initialize BERT model for embeddings
         if BERT_AVAILABLE:
             try:
-                self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
+                self.bert_model = SentenceTransformer("all-MiniLM-L6-v2")
                 print("✓ BERT model loaded successfully")
             except Exception as e:
                 print(f"Warning: Could not load BERT model: {e}")
@@ -405,11 +358,7 @@ class BiasDetector:
             self.bert_model = None
 
         # Ensemble weights (keyword, tfidf, embedding)
-        self.ensemble_weights = {
-            'keyword': 0.3,
-            'tfidf': 0.3,
-            'embedding': 0.4
-        }
+        self.ensemble_weights = {"keyword": 0.3, "tfidf": 0.3, "embedding": 0.4}
 
     def calculate_keyword_score(self, text: str, keyword_list: List[str]) -> float:
         """Calculate normalized keyword score for given text"""
@@ -427,7 +376,9 @@ class BiasDetector:
         normalized_score = (matches / len(keyword_list)) * (1000 / max(word_count, 1))
         return min(normalized_score, 1.0)  # Cap at 1.0
 
-    def calculate_tfidf_score(self, text: str, keyword_groups: Dict[str, List[str]]) -> Dict[str, float]:
+    def calculate_tfidf_score(
+        self, text: str, keyword_groups: Dict[str, List[str]]
+    ) -> Dict[str, float]:
         """Calculate TF-IDF weighted scores for keyword groups"""
         if not text or not keyword_groups:
             return {k: 0.0 for k in keyword_groups.keys()}
@@ -437,7 +388,7 @@ class BiasDetector:
             documents = [text]
             group_names = []
             for group_name, keywords in keyword_groups.items():
-                documents.append(' '.join(keywords))
+                documents.append(" ".join(keywords))
                 group_names.append(group_name)
 
             # Fit TF-IDF
@@ -448,7 +399,7 @@ class BiasDetector:
             scores = {}
 
             for i, group_name in enumerate(group_names):
-                group_vector = tfidf_matrix[i + 1:i + 2]
+                group_vector = tfidf_matrix[i + 1 : i + 2]
                 similarity = cosine_similarity(text_vector, group_vector)[0][0]
                 scores[group_name] = max(0.0, similarity)
 
@@ -463,7 +414,9 @@ class BiasDetector:
             # Fallback to zero scores
             return {k: 0.0 for k in keyword_groups.keys()}
 
-    def calculate_embedding_similarity(self, text: str, keyword_groups: Dict[str, List[str]]) -> Dict[str, float]:
+    def calculate_embedding_similarity(
+        self, text: str, keyword_groups: Dict[str, List[str]]
+    ) -> Dict[str, float]:
         """Calculate BERT embedding similarity scores for keyword groups"""
         if not text or not keyword_groups or self.bert_model is None:
             return {k: 0.0 for k in keyword_groups.keys()}
@@ -476,7 +429,7 @@ class BiasDetector:
             scores = {}
             for group_name, keywords in keyword_groups.items():
                 # Create a representative text from keywords
-                group_text = ' '.join(keywords)
+                group_text = " ".join(keywords)
                 group_embedding = self.bert_model.encode([group_text])[0]
 
                 # Calculate cosine similarity
@@ -495,10 +448,12 @@ class BiasDetector:
         except Exception as e:
             return {k: 0.0 for k in keyword_groups.keys()}
 
-    def ensemble_bias_score(self, text: str, keyword_groups: Dict[str, List[str]]) -> Tuple[Dict[str, float], str, float]:
+    def ensemble_bias_score(
+        self, text: str, keyword_groups: Dict[str, List[str]]
+    ) -> Tuple[Dict[str, float], str, float]:
         """Calculate ensemble bias score combining keyword, TF-IDF, and embedding approaches"""
         if not text or not keyword_groups:
-            return {k: 0.0 for k in keyword_groups.keys()}, 'neutral', 0.0
+            return {k: 0.0 for k in keyword_groups.keys()}, "neutral", 0.0
 
         # 1. Keyword-based scores
         keyword_scores = {}
@@ -515,9 +470,10 @@ class BiasDetector:
         ensemble_scores = {}
         for group_name in keyword_groups.keys():
             combined = (
-                self.ensemble_weights['keyword'] * keyword_scores.get(group_name, 0.0)
-                + self.ensemble_weights['tfidf'] * tfidf_scores.get(group_name, 0.0)
-                + self.ensemble_weights['embedding'] * embedding_scores.get(group_name, 0.0)
+                self.ensemble_weights["keyword"] * keyword_scores.get(group_name, 0.0)
+                + self.ensemble_weights["tfidf"] * tfidf_scores.get(group_name, 0.0)
+                + self.ensemble_weights["embedding"]
+                * embedding_scores.get(group_name, 0.0)
             )
             ensemble_scores[group_name] = combined
 
@@ -528,7 +484,7 @@ class BiasDetector:
 
         # Determine dominant group and confidence
         if not ensemble_scores or max(ensemble_scores.values()) == 0:
-            return ensemble_scores, 'neutral', 0.0
+            return ensemble_scores, "neutral", 0.0
 
         dominant_group = max(ensemble_scores, key=ensemble_scores.get)
         dominant_score = ensemble_scores[dominant_group]
@@ -547,21 +503,29 @@ class BiasDetector:
         """
         # Prepare keyword groups for ensemble
         keyword_groups = {
-            'male': self.keywords.gender_keywords["male_terms"]
+            "male": self.keywords.gender_keywords["male_terms"]
             + self.keywords.gender_keywords["stereotypical_male"],
-            'female': self.keywords.gender_keywords["female_terms"]
-            + self.keywords.gender_keywords["stereotypical_female"]
+            "female": self.keywords.gender_keywords["female_terms"]
+            + self.keywords.gender_keywords["stereotypical_female"],
         }
 
         # Get ensemble scores
-        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(text, keyword_groups)
+        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(
+            text, keyword_groups
+        )
 
         # Check for stereotype presence
         text_lower = text.lower()
-        stereotype_female = sum(1 for term in self.keywords.gender_keywords["stereotypical_female"]
-                                if term in text_lower)
-        stereotype_male = sum(1 for term in self.keywords.gender_keywords["stereotypical_male"]
-                              if term in text_lower)
+        stereotype_female = sum(
+            1
+            for term in self.keywords.gender_keywords["stereotypical_female"]
+            if term in text_lower
+        )
+        stereotype_male = sum(
+            1
+            for term in self.keywords.gender_keywords["stereotypical_male"]
+            if term in text_lower
+        )
 
         # Calculate bias score incorporating stereotypes
         bias_score = confidence
@@ -574,9 +538,9 @@ class BiasDetector:
             return 0.0, "neutral"
         elif confidence < 0.3:
             bias_type = "low_bias"
-        elif dominant_group == 'male' or stereotype_male > stereotype_female:
+        elif dominant_group == "male" or stereotype_male > stereotype_female:
             bias_type = "male_bias"
-        elif dominant_group == 'female' or stereotype_female > stereotype_male:
+        elif dominant_group == "female" or stereotype_female > stereotype_male:
             bias_type = "female_bias"
         else:
             bias_type = "moderate_bias"
@@ -595,14 +559,22 @@ class BiasDetector:
             return 0.0, "neutral"
 
         # Get ensemble scores
-        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(text, keyword_groups)
+        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(
+            text, keyword_groups
+        )
 
         # Check for negative stereotypes
         text_lower = text.lower()
-        violence_count = sum(1 for term in self.keywords.religion_keywords["stereotypes"]["violent"]
-                             if term in text_lower)
-        negative_count = sum(1 for term in self.keywords.religion_keywords["stereotypes"]["superstitious"]
-                             if term in text_lower)
+        violence_count = sum(
+            1
+            for term in self.keywords.religion_keywords["stereotypes"]["violent"]
+            if term in text_lower
+        )
+        negative_count = sum(
+            1
+            for term in self.keywords.religion_keywords["stereotypes"]["superstitious"]
+            if term in text_lower
+        )
 
         # Calculate bias score with stereotype boost
         bias_score = confidence
@@ -626,21 +598,29 @@ class BiasDetector:
         """Detect caste bias using ensemble approach"""
         # Prepare keyword groups
         keyword_groups = {
-            'upper_caste': self.keywords.caste_keywords['upper_caste']
-            + self.keywords.caste_keywords['stereotypes']['elitist'],
-            'lower_caste': self.keywords.caste_keywords['lower_caste']
-            + self.keywords.caste_keywords['stereotypes']['oppressed']
+            "upper_caste": self.keywords.caste_keywords["upper_caste"]
+            + self.keywords.caste_keywords["stereotypes"]["elitist"],
+            "lower_caste": self.keywords.caste_keywords["lower_caste"]
+            + self.keywords.caste_keywords["stereotypes"]["oppressed"],
         }
 
         # Get ensemble scores
-        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(text, keyword_groups)
+        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(
+            text, keyword_groups
+        )
 
         # Check for stereotype presence
         text_lower = text.lower()
-        elitist_count = sum(1 for term in self.keywords.caste_keywords['stereotypes']['elitist']
-                            if term in text_lower)
-        oppressed_count = sum(1 for term in self.keywords.caste_keywords['stereotypes']['oppressed']
-                              if term in text_lower)
+        elitist_count = sum(
+            1
+            for term in self.keywords.caste_keywords["stereotypes"]["elitist"]
+            if term in text_lower
+        )
+        oppressed_count = sum(
+            1
+            for term in self.keywords.caste_keywords["stereotypes"]["oppressed"]
+            if term in text_lower
+        )
 
         # Calculate bias score with stereotype consideration
         bias_score = confidence
@@ -653,9 +633,9 @@ class BiasDetector:
             return 0.0, "neutral"
         elif bias_score < 0.3:
             bias_type = "low_bias"
-        elif dominant_group == 'upper_caste':
+        elif dominant_group == "upper_caste":
             bias_type = "upper_caste_focus"
-        elif dominant_group == 'lower_caste':
+        elif dominant_group == "lower_caste":
             bias_type = "lower_caste_focus"
         else:
             bias_type = "balanced"
@@ -674,14 +654,22 @@ class BiasDetector:
             return 0.0, "neutral"
 
         # Get ensemble scores
-        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(text, keyword_groups)
+        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(
+            text, keyword_groups
+        )
 
         # Check for negative stereotypes
         text_lower = text.lower()
-        racist_count = sum(1 for term in self.keywords.region_keywords["stereotypes"]["racist"]
-                           if term in text_lower)
-        backward_count = sum(1 for term in self.keywords.region_keywords["stereotypes"]["backward"]
-                             if term in text_lower)
+        racist_count = sum(
+            1
+            for term in self.keywords.region_keywords["stereotypes"]["racist"]
+            if term in text_lower
+        )
+        backward_count = sum(
+            1
+            for term in self.keywords.region_keywords["stereotypes"]["backward"]
+            if term in text_lower
+        )
 
         # Calculate bias score with stereotype boost
         bias_score = confidence
@@ -705,21 +693,33 @@ class BiasDetector:
         """Detect socioeconomic bias using ensemble approach"""
         # Prepare keyword groups
         keyword_groups = {
-            'wealthy': self.keywords.socioeconomic_keywords['wealthy']
-            + self.keywords.socioeconomic_keywords['stereotypes']['elite_disconnected'],
-            'poor': self.keywords.socioeconomic_keywords['poor']
-            + self.keywords.socioeconomic_keywords['stereotypes']['poor_negative']
+            "wealthy": self.keywords.socioeconomic_keywords["wealthy"]
+            + self.keywords.socioeconomic_keywords["stereotypes"]["elite_disconnected"],
+            "poor": self.keywords.socioeconomic_keywords["poor"]
+            + self.keywords.socioeconomic_keywords["stereotypes"]["poor_negative"],
         }
 
         # Get ensemble scores
-        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(text, keyword_groups)
+        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(
+            text, keyword_groups
+        )
 
         # Check for stereotype presence
         text_lower = text.lower()
-        elite_count = sum(1 for term in self.keywords.socioeconomic_keywords['stereotypes']['elite_disconnected']
-                          if term in text_lower)
-        poor_negative_count = sum(1 for term in self.keywords.socioeconomic_keywords['stereotypes']['poor_negative']
-                                  if term in text_lower)
+        elite_count = sum(
+            1
+            for term in self.keywords.socioeconomic_keywords["stereotypes"][
+                "elite_disconnected"
+            ]
+            if term in text_lower
+        )
+        poor_negative_count = sum(
+            1
+            for term in self.keywords.socioeconomic_keywords["stereotypes"][
+                "poor_negative"
+            ]
+            if term in text_lower
+        )
 
         # Calculate bias score with stereotype consideration
         bias_score = confidence
@@ -732,9 +732,9 @@ class BiasDetector:
             return 0.0, "neutral"
         elif bias_score < 0.3:
             bias_type = "low_bias"
-        elif dominant_group == 'wealthy':
+        elif dominant_group == "wealthy":
             bias_type = "wealthy_focus"
-        elif dominant_group == 'poor':
+        elif dominant_group == "poor":
             bias_type = "poverty_focus"
         else:
             bias_type = "balanced"
@@ -748,25 +748,27 @@ class BiasDetector:
         """
         # Prepare keyword groups
         keyword_groups = {
-            'left_leaning': self.keywords.political_keywords['left_leaning'],
-            'right_leaning': self.keywords.political_keywords['right_leaning'],
-            'centrist': self.keywords.political_keywords['centrist']
+            "left_leaning": self.keywords.political_keywords["left_leaning"],
+            "right_leaning": self.keywords.political_keywords["right_leaning"],
+            "centrist": self.keywords.political_keywords["centrist"],
         }
 
         # Get ensemble scores
-        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(text, keyword_groups)
+        ensemble_scores, dominant_group, confidence = self.ensemble_bias_score(
+            text, keyword_groups
+        )
 
         # Map to bias types
         if confidence < 0.2 or max(ensemble_scores.values()) < 0.1:
             return 0.0, "neutral"
 
         bias_type_map = {
-            'left_leaning': 'left_leaning',
-            'right_leaning': 'right_leaning',
-            'centrist': 'centrist'
+            "left_leaning": "left_leaning",
+            "right_leaning": "right_leaning",
+            "centrist": "centrist",
         }
 
-        bias_type = bias_type_map.get(dominant_group, 'neutral')
+        bias_type = bias_type_map.get(dominant_group, "neutral")
         bias_score = min(confidence, 1.0)
 
         return round(bias_score, 3), bias_type
