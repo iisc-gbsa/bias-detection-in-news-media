@@ -12,7 +12,7 @@ from typing import Optional, Dict
 import logging
 from datetime import datetime
 
-from config import kafka_config
+from config.config import kafka_config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -111,8 +111,8 @@ class NewsKafkaProducer:
                 batch = df.iloc[start_idx:end_idx]
 
                 logger.info(
-                    f"Publishing batch {start_idx//batch_size + 1}: "
-                    f"articles {start_idx+1} to {end_idx}"
+                    f"Publishing batch {start_idx // batch_size + 1}: "
+                    f"articles {start_idx + 1} to {end_idx}"
                 )
 
                 for _, row in batch.iterrows():

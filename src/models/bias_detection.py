@@ -1,4 +1,4 @@
-from catogorise_the_article import (
+from src.models.catogorise_the_article import (
     EnsembleTopicClassifier,
     create_ensemble_topic_classifier,
 )
@@ -399,7 +399,7 @@ class BiasDetector:
             scores = {}
 
             for i, group_name in enumerate(group_names):
-                group_vector = tfidf_matrix[i + 1 : i + 2]
+                group_vector = tfidf_matrix[i + 1: i + 2]
                 similarity = cosine_similarity(text_vector, group_vector)[0][0]
                 scores[group_name] = max(0.0, similarity)
 
