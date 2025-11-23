@@ -56,31 +56,31 @@ start_infrastructure() {
 # Setup Kafka topics
 setup_topics() {
     log_info "Setting up Kafka topics..."
-    python setup_kafka_topics.py
+    PYTHONPATH=. python scripts/setup_kafka_topics.py
 }
 
 # Run batch processor
 run_batch() {
     log_info "Running batch processor..."
-    python batch_processor.py "$@"
+    PYTHONPATH=. python src/processing/batch/batch_processor.py "$@"
 }
 
 # Run streaming processor
 run_stream() {
     log_info "Running streaming processor..."
-    python streaming_processor.py "$@"
+    PYTHONPATH=. python src/processing/streaming/streaming_processor.py "$@"
 }
 
 # Run error handler
 run_error_handler() {
     log_info "Running error handler..."
-    python error_handler.py "$@"
+    PYTHONPATH=. python src/utils/error_handler.py "$@"
 }
 
 # Run Kafka producer
 run_producer() {
     log_info "Running Kafka producer..."
-    python kafka_producer.py "$@"
+    PYTHONPATH=. python src/processing/streaming/kafka_producer.py "$@"
 }
 
 # Stop everything
@@ -172,8 +172,8 @@ main() {
             setup_topics
             
             log_info "Starting all processors in background..."
-            python streaming_processor.py > logs/streaming.log 2>&1 &
-            python error_handler.py > logs/error_handler.log 2>&1 &
+            PYTHONPATH=. python src/processing/streaming/streaming_processor.py > logs/streaming.log 2>&1 &
+            PYTHONPATH=. python src/utils/error_handler.py > logs/error_handler.log 2>&1 &
             
             log_info "All services started!"
             log_info "Check logs in ./logs/ directory"

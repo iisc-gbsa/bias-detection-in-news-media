@@ -16,7 +16,7 @@ from pyspark.sql.types import (
 import logging
 from datetime import datetime
 
-from config import kafka_config, mongo_config, spark_config
+from config.config import kafka_config, mongo_config, spark_config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

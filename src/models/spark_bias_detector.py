@@ -43,8 +43,8 @@ import numpy as np
 from typing import Dict, List, Tuple, Optional
 import json
 
-from bias_detection import BiasKeywords
-from config import bias_config
+from src.models.bias_detection import BiasKeywords
+from config.config import bias_config
 
 
 class SparkBiasDetector:

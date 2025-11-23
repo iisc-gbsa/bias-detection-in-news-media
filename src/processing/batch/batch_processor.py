@@ -25,8 +25,8 @@ import logging
 from datetime import datetime
 import sys
 
-from spark_bias_detector import SparkBiasDetector
-from config import kafka_config, mongo_config, spark_config
+from src.models.spark_bias_detector import SparkBiasDetector
+from config.config import kafka_config, mongo_config, spark_config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

@@ -6,7 +6,7 @@ Creates required topics for the bias detection pipeline
 from kafka.admin import KafkaAdminClient, NewTopic
 from kafka.errors import TopicAlreadyExistsError
 import logging
-from config import kafka_config
+from config.config import kafka_config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
