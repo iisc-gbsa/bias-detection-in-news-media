@@ -46,7 +46,6 @@ logs/
 
 # Data directories (ignore processed data, keep raw sample data)
 data/processed/
-data/raw/*.csv
 !data/raw/.gitkeep
 
 # Spark
