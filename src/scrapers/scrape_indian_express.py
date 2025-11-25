@@ -134,8 +134,8 @@ def main():
     print("=" * 80)
 
     # Configure date range here
-    START_YEAR = 2024
-    END_YEAR = 2024
+    START_YEAR = 1998
+    END_YEAR = 2025
 
     print(f"\nScraping articles from {START_YEAR} to {END_YEAR}")
     print(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
