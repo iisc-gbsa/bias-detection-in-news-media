@@ -58,3 +58,7 @@ kafka-logs/
 
 # MongoDB
 mongo-data/
+checkpoints
+logs
+
+scrape/cache*
