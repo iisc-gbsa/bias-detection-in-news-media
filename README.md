@@ -141,7 +141,14 @@ bias-detection-in-news-media/
 - Docker & Docker Compose
 - 8GB RAM (recommended)
 
+**Windows Users:**
+- Install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
+- Use PowerShell or Command Prompt (examples for both provided below)
+- *Optional*: Install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) for a Linux-like experience
+
 ### 1. Install Dependencies
+
+#### macOS/Linux
 
 ```bash
 # Install Python dependencies
@@ -151,7 +158,19 @@ pip install -r requirements.txt
 chmod +x scripts/run_pipeline.sh
 ```
 
+#### Windows
+
+```powershell
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Note: Shell scripts (.sh) don't run natively on Windows
+# Use the Python commands directly (shown below) or use WSL/Git Bash
+```
+
 ### 2. Start Infrastructure
+
+#### macOS/Linux
 
 ```bash
 # Start Kafka, Zookeeper, MongoDB
@@ -167,6 +186,32 @@ python scripts/setup_kafka_topics.py
 ./scripts/run_pipeline.sh setup
 ```
 
+#### Windows (PowerShell)
+
+```powershell
+# Start Kafka, Zookeeper, MongoDB
+docker-compose up -d
+
+# Wait 30 seconds for services to initialize
+Start-Sleep -Seconds 30
+
+# Create Kafka topics
+python scripts/setup_kafka_topics.py
+```
+
+#### Windows (Command Prompt)
+
+```cmd
+:: Start Kafka, Zookeeper, MongoDB
+docker-compose up -d
+
+:: Wait 30 seconds for services to initialize
+timeout /t 30
+
+:: Create Kafka topics
+python scripts\setup_kafka_topics.py
+```
+
 ### 3. Verify Setup
 
 - **Kafka UI**: http://localhost:8080
@@ -176,6 +221,7 @@ python scripts/setup_kafka_topics.py
 
 #### Option A: Batch Processing (Daily Analysis)
 
+**macOS/Linux:**
 ```bash
 # 1. Publish articles to Kafka
 PYTHONPATH=. python src/processing/streaming/kafka_producer.py \
@@ -196,8 +242,36 @@ mongosh mongodb://localhost:27018/bias_detection
 > db.daily_news.find().limit(5)
 ```
 
+**Windows (PowerShell):**
+```powershell
+# 1. Publish articles to Kafka
+$env:PYTHONPATH = "."
+python src/processing/streaming/kafka_producer.py --csv data/raw/economic_times_articles_2024.csv --batch-size 100
+
+# 2. Process batch
+python src/processing/batch/batch_processor.py
+
+# 3. Check results
+mongosh mongodb://localhost:27018/bias_detection
+# > db.daily_news.find().limit(5)
+```
+
+**Windows (Command Prompt):**
+```cmd
+:: 1. Publish articles to Kafka
+set PYTHONPATH=.
+python src\processing\streaming\kafka_producer.py --csv data\raw\economic_times_articles_2024.csv --batch-size 100
+
+:: 2. Process batch
+python src\processing\batch\batch_processor.py
+
+:: 3. Check results
+mongosh mongodb://localhost:27018/bias_detection
+```
+
 #### Option B: Streaming Processing (Real-time)
 
+**macOS/Linux:**
 ```bash
 # Terminal 1: Start streaming processor
 PYTHONPATH=. python src/processing/streaming/streaming_processor.py --console
@@ -216,6 +290,36 @@ PYTHONPATH=. python src/processing/streaming/kafka_producer.py \
 PYTHONPATH=. python src/utils/error_handler.py --retry
 # OR use the script (recommended)
 ./scripts/run_pipeline.sh error --retry
+```
+
+**Windows (PowerShell):**
+```powershell
+# Terminal 1: Start streaming processor
+$env:PYTHONPATH = "."
+python src/processing/streaming/streaming_processor.py --console
+
+# Terminal 2: Simulate real-time news
+$env:PYTHONPATH = "."
+python src/processing/streaming/kafka_producer.py --csv data/raw/economic_times_articles_2024.csv --realtime --delay 0.5
+
+# Terminal 3: Monitor (optional)
+$env:PYTHONPATH = "."
+python src/utils/error_handler.py --retry
+```
+
+**Windows (Command Prompt):**
+```cmd
+:: Terminal 1: Start streaming processor
+set PYTHONPATH=.
+python src\processing\streaming\streaming_processor.py --console
+
+:: Terminal 2: Simulate real-time news
+set PYTHONPATH=.
+python src\processing\streaming\kafka_producer.py --csv data\raw\economic_times_articles_2024.csv --realtime --delay 0.5
+
+:: Terminal 3: Monitor (optional)
+set PYTHONPATH=.
+python src\utils\error_handler.py --retry
 ```
 
 ### 5. Query Results
@@ -302,6 +406,8 @@ Edit `docker-compose.yml` to change ports:
 
 **Import errors?**  
 Ensure you're running from project root:
+
+*macOS/Linux:*
 ```bash
 # Check current directory
 pwd
@@ -313,21 +419,83 @@ export PYTHONPATH="${PYTHONPATH}:${PWD}"
 python -m src.processing.batch.batch_processor
 ```
 
+*Windows (PowerShell):*
+```powershell
+# Check current directory
+Get-Location
+
+# Add to PYTHONPATH
+$env:PYTHONPATH = "."
+
+# Or run as module
+python -m src.processing.batch.batch_processor
+```
+
+*Windows (Command Prompt):*
+```cmd
+:: Check current directory
+cd
+
+:: Add to PYTHONPATH
+set PYTHONPATH=.
+
+:: Or run as module
+python -m src.processing.batch.batch_processor
+```
+
 **Kafka connection errors?**  
 Wait 30 seconds after starting Docker for Kafka initialization:
+
+*macOS/Linux:*
 ```bash
 docker-compose up -d
 sleep 30
 python scripts/setup_kafka_topics.py
 ```
 
+*Windows (PowerShell):*
+```powershell
+docker-compose up -d
+Start-Sleep -Seconds 30
+python scripts/setup_kafka_topics.py
+```
+
+*Windows (Command Prompt):*
+```cmd
+docker-compose up -d
+timeout /t 30
+python scripts\setup_kafka_topics.py
+```
+
 **Module not found errors?**
+
+*macOS/Linux:*
 ```bash
 # Verify structure
 ls -la src/
 ls -la config/
 
 # Check Python path
+python -c "import sys; print('\n'.join(sys.path))"
+```
+
+*Windows (PowerShell):*
+```powershell
+# Verify structure
+Get-ChildItem src/
+Get-ChildItem config/
+
+# Check Python path
+python -c "import sys; print('\n'.join(sys.path))"
+```
+
+*Windows (Command Prompt):*
+```cmd
+:: Verify structure
+dir src\
+dir config\
+
+:: Check Python path
 python -c "import sys; print('\n'.join(sys.path))"
 ```
 
@@ -338,6 +506,8 @@ python -c "import sys; print('\n'.join(sys.path))"
 - **Mongo Express**: http://localhost:8081 (admin/admin)
 
 View logs:
+
+*macOS/Linux:*
 ```bash
 # Streaming processor logs
 tail -f logs/streaming.log
@@ -350,13 +520,46 @@ docker-compose logs -f kafka
 docker-compose logs -f mongodb
 ```
 
+*Windows (PowerShell):*
+```powershell
+# Streaming processor logs
+Get-Content logs/streaming.log -Wait
+
+# Error handler logs
+Get-Content logs/error_handler.log -Wait
+
+# Docker service logs
+docker-compose logs -f kafka
+docker-compose logs -f mongodb
+```
+
+*Windows (Command Prompt):*
+```cmd
+:: View log file (static, not tailing)
+type logs\streaming.log
+
+:: Docker service logs (works same as Unix)
+docker-compose logs -f kafka
+docker-compose logs -f mongodb
+```
+
 ## Stopping the System
 
+*macOS/Linux:*
 ```bash
 # Stop all services
 docker-compose down
 # OR use the script
 ./scripts/run_pipeline.sh stop
+
+# Stop and remove volumes (clears all data)
+docker-compose down -v
+```
+
+*Windows (PowerShell/Command Prompt):*
+```powershell
+# Stop all services
+docker-compose down
 
 # Stop and remove volumes (clears all data)
 docker-compose down -v
