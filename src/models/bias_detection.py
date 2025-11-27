@@ -23,9 +23,13 @@ try:
     BERT_AVAILABLE = True
 except ImportError:
     BERT_AVAILABLE = False
-    print(
-        "Warning: sentence-transformers not available. Install with: pip install sentence-transformers"
-    )
+    import sys
+
+    # Only print warning if we're not in shutdown phase
+    if not hasattr(sys, "_called_from_test") and sys.stderr:
+        print(
+            "Warning: sentence-transformers not available. Install with: pip install sentence-transformers"
+        )
 
 # Import topic classification from existing script
 
@@ -399,7 +403,7 @@ class BiasDetector:
             scores = {}
 
             for i, group_name in enumerate(group_names):
-                group_vector = tfidf_matrix[i + 1: i + 2]
+                group_vector = tfidf_matrix[i + 1 : i + 2]
                 similarity = cosine_similarity(text_vector, group_vector)[0][0]
                 scores[group_name] = max(0.0, similarity)
 

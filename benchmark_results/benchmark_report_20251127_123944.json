@@ -1,0 +1,37 @@
+{
+  "benchmark_id": "20251127_123944",
+  "timestamp": "2025-11-27T12:58:08.125524",
+  "config": {
+    "source_mongo_uri": "mongodb://localhost:27017",
+    "source_mongo_db": "test",
+    "source_mongo_collection": "articles",
+    "percentage": 100.0,
+    "batch_count": null,
+    "producer_batch_size": 1000,
+    "kafka_topic": "news",
+    "bootstrap_servers": "localhost:9092",
+    "consumer_duration": 1
+  },
+  "streaming_consumer_metrics": {
+    "duration_seconds": 939.0231297016144,
+    "total_batches": 92,
+    "total_records_processed": 91056,
+    "total_records_written": 91056,
+    "failed_records": 0,
+    "throughput_records_per_sec": 96.96885744330292,
+    "spark_config": {
+      "executor_cores": 2,
+      "executor_memory": "4g",
+      "driver_memory": "4g",
+      "total_cpu_cores_available": 10,
+      "num_executors": 1
+    },
+    "avg_batch_processing_time_ms": 884.4832752061926,
+    "avg_batch_size": 989.7391304347826,
+    "avg_mongodb_write_time_ms": 437.67819974733436,
+    "avg_executor_cpu_utilization_percent": 200.0,
+    "total_executor_cpu_time_seconds": 1061.69,
+    "avg_executor_memory_used_mb": 0,
+    "avg_active_tasks": 0.0
+  }
+}

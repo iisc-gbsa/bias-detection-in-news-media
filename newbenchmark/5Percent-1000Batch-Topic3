@@ -1,0 +1,53 @@
+2025-11-27 11:43:45,780 - __main__ - INFO -
+================================================================================
+2025-11-27 11:43:45,780 - __main__ - INFO - BENCHMARK REPORT
+2025-11-27 11:43:45,780 - __main__ - INFO - ================================================================================
+2025-11-27 11:43:45,787 - __main__ - INFO -
+✓ Unified report saved to: benchmark_results/benchmark_report_20251127_114022.json
+2025-11-27 11:43:45,787 - __main__ - INFO -
+================================================================================
+2025-11-27 11:43:45,787 - __main__ - INFO - SUMMARY
+2025-11-27 11:43:45,787 - __main__ - INFO - ================================================================================
+2025-11-27 11:43:45,787 - __main__ - INFO -
+📊 Streaming Consumer (Spark + Bias Detection):
+2025-11-27 11:43:45,787 - __main__ - INFO -   Records Processed: 15175
+2025-11-27 11:43:45,787 - __main__ - INFO -   Records Written: 15175
+2025-11-27 11:43:45,787 - __main__ - INFO -   Failed Records: 0
+2025-11-27 11:43:45,787 - __main__ - INFO -   Duration: 178.54 seconds
+2025-11-27 11:43:45,787 - __main__ - INFO -
+⚡ Throughput:
+2025-11-27 11:43:45,787 - __main__ - INFO -   84.99 records/sec
+2025-11-27 11:43:45,787 - __main__ - INFO -
+⏱️  Processing Times:
+2025-11-27 11:43:45,787 - __main__ - INFO -   Avg Batch Processing: 659.89 ms
+2025-11-27 11:43:45,787 - __main__ - INFO -   Avg MongoDB Write: 315.85 ms
+2025-11-27 11:43:45,787 - __main__ - INFO -   Avg Batch Size: 948.4 records
+2025-11-27 11:43:45,787 - __main__ - INFO -
+💻 Spark Executor Metrics:
+2025-11-27 11:43:45,787 - __main__ - INFO -   Avg CPU Utilization: 200.00%
+2025-11-27 11:43:45,787 - __main__ - INFO -   Total CPU Time: 130.13 seconds
+2025-11-27 11:43:45,787 - __main__ - INFO -   Avg Executor Memory: 0.00 MB
+2025-11-27 11:43:45,787 - __main__ - INFO -   Avg Active Tasks: 0.0
+2025-11-27 11:43:45,787 - __main__ - INFO -
+🔧 Spark Configuration:
+2025-11-27 11:43:45,787 - __main__ - INFO -   Executor Cores: 2
+2025-11-27 11:43:45,787 - __main__ - INFO -   Num Executors: 1
+2025-11-27 11:43:45,787 - __main__ - INFO -   Executor Memory: 4g
+2025-11-27 11:43:45,787 - __main__ - INFO -   Total CPU Cores: 10
+2025-11-27 11:43:45,787 - __main__ - INFO -
+================================================================================
+2025-11-27 11:43:45,787 - __main__ - INFO -
+✓ Benchmark completed successfully!
+
+[SUCCESS] Integrated benchmark completed!
+[INFO] Result file: benchmark_results/benchmark_report_20251127_114022.json
+
+[INFO] Quick Summary:
+Streaming Consumer (Spark + Bias Detection):
+  Processed: 15175 records
+  Written: 15175 records
+  Duration: 178s
+  Throughput: 84 rec/sec
+  Avg Batch Processing: 659ms
+  Spark Executor Cores: 2
+  Total CPU Cores: 10
