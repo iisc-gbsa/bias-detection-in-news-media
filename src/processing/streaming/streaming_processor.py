@@ -58,6 +58,9 @@ class StreamingNewsProcessor:
                 StructField("source", StringType(), True),
                 StructField("ingestion_time", StringType(), True),
                 StructField("processing_mode", StringType(), True),
+                StructField("benchmark_run_id", StringType(), True),
+                StructField("benchmark_percentage", IntegerType(), True),
+                StructField("benchmark_batch_id", IntegerType(), True),
             ]
         )
 
@@ -78,11 +81,12 @@ class StreamingNewsProcessor:
             )
             .config("spark.sql.streaming.checkpointLocation", self.checkpoint_location)
             .config("spark.sql.streaming.schemaInference", "true")
+            .config("spark.sql.shuffle.partitions", spark_config.shuffle_partitions)
             .getOrCreate()
         )
 
         spark.sparkContext.setLogLevel("WARN")
-        logger.info("✓ Spark session created for streaming processing")
+        logger.info("Spark session created for streaming processing")
 
         return spark
 
@@ -124,7 +128,7 @@ class StreamingNewsProcessor:
         # Add processing timestamp
         df = df.withColumn("stream_processing_time", current_timestamp())
 
-        logger.info("✓ Kafka stream initialized")
+        logger.info("Kafka stream initialized")
 
         return df
 
@@ -173,13 +177,13 @@ class StreamingNewsProcessor:
                     ).save()
 
                     logger.info(
-                        f"✓ Batch {batch_id}: Wrote {batch_df.count()} records to MongoDB"
+                        f"Batch {batch_id}: Wrote {batch_df.count()} records to MongoDB"
                     )
                 else:
                     logger.debug(f"Batch {batch_id}: No records to write")
 
             except Exception as e:
-                logger.error(f"✗ Batch {batch_id}: Error writing to MongoDB: {e}")
+                logger.error(f"Batch {batch_id}: Error writing to MongoDB: {e}")
                 # Write errors to error topic
                 self._write_errors_to_kafka(batch_df, e, batch_id)
 
@@ -213,10 +217,10 @@ class StreamingNewsProcessor:
                 "topic", kafka_config.error_topic
             ).save()
 
-            logger.info(f"✓ Batch {batch_id}: Sent errors to error topic")
+            logger.info(f"Batch {batch_id}: Sent errors to error topic")
 
         except Exception as e2:
-            logger.error(f"✗ Batch {batch_id}: Failed to write errors: {e2}")
+            logger.error(f"Batch {batch_id}: Failed to write errors: {e2}")
 
     def write_to_console(
         self, df: "DataFrame", query_name: str = "console_output"
@@ -327,12 +331,7 @@ class StreamingNewsProcessor:
                 )
                 queries.append(console_query)
 
-            # Optional: Monitoring statistics
-            if enable_monitoring:
-                stats_query = self.monitor_stream_stats(analyzed_df)
-                queries.append(stats_query)
-
-            logger.info("✓ All streaming queries started")
+            logger.info("All streaming queries started")
             logger.info("Press Ctrl+C to stop...")
 
             # Wait for termination
@@ -343,10 +342,10 @@ class StreamingNewsProcessor:
             logger.info("\nStopping streaming queries...")
             for query in self.spark.streams.active:
                 query.stop()
-            logger.info("✓ All queries stopped")
+            logger.info("All queries stopped")
 
         except Exception as e:
-            logger.error(f"✗ Streaming job failed: {e}")
+            logger.error(f"Streaming job failed: {e}")
             raise
 
     def stop(self):
@@ -354,7 +353,7 @@ class StreamingNewsProcessor:
         for query in self.spark.streams.active:
             query.stop()
         self.spark.stop()
-        logger.info("✓ Streaming processor stopped")
+        logger.info("Streaming processor stopped")
 
 
 def main():

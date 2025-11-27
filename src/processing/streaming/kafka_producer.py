@@ -11,8 +11,9 @@ import pandas as pd
 from typing import Optional, Dict
 import logging
 from datetime import datetime
+from pymongo import MongoClient
 
-from config.config import kafka_config
+from config.config import kafka_config, mongo_config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -166,6 +167,94 @@ class NewsKafkaProducer:
 
         return self.publish_article(article, key=article_data.get("url"))
 
+    def publish_from_mongodb(
+        self,
+        database: str = "test",
+        collection: str = "articles",
+        batch_size: int = 100,
+        query: Optional[Dict] = None,
+        mongo_uri: Optional[str] = None,
+    ) -> int:
+        """
+        Publish articles from MongoDB collection to Kafka in batches
+
+        Args:
+            database: MongoDB database name
+            collection: MongoDB collection name
+            batch_size: Number of articles to publish in each batch
+            query: Optional MongoDB query filter
+            mongo_uri: Optional MongoDB URI (defaults to config)
+
+        Returns:
+            Number of successfully published articles
+        """
+        try:
+            uri = mongo_uri or mongo_config.uri
+            client = MongoClient(uri)
+            db = client[database]
+            coll = db[collection]
+
+            # Get total count for logging
+            filter_query = query or {}
+            total_count = coll.count_documents(filter_query)
+            logger.info(f"Found {total_count} articles in {database}.{collection}")
+
+            published_count = 0
+            failed_count = 0
+            batch_num = 0
+
+            # Fetch and publish in batches using skip/limit
+            for skip in range(0, total_count, batch_size):
+                batch_num += 1
+                cursor = coll.find(filter_query).skip(skip).limit(batch_size)
+                batch_docs = list(cursor)
+
+                logger.info(
+                    f"Publishing batch {batch_num}: "
+                    f"articles {skip + 1} to {min(skip + batch_size, total_count)}"
+                )
+
+                for doc in batch_docs:
+                    # Convert MongoDB document to article dict
+                    article = {
+                        "url": doc.get("url", ""),
+                        "title": doc.get("title", ""),
+                        "author": doc.get("author", ""),
+                        "published_date": doc.get("published_date", ""),
+                        "article_text": doc.get("article_text", ""),
+                        "word_count": doc.get("word_count", 0),
+                        "media_name": doc.get("media_name", ""),
+                        "source": "mongodb_import",
+                    }
+
+                    # Remove MongoDB _id if present (not JSON serializable)
+                    if "_id" in doc:
+                        article["mongo_id"] = str(doc["_id"])
+
+                    # Use URL as key for consistent partitioning
+                    key = article.get("url") or None
+
+                    if self.publish_article(article, key):
+                        published_count += 1
+                    else:
+                        failed_count += 1
+
+                # Flush after each batch
+                self.producer.flush()
+                logger.info(f"Batch {batch_num} flushed to Kafka")
+
+            client.close()
+            logger.info(
+                f"Publishing complete: {published_count} succeeded, "
+                f"{failed_count} failed"
+            )
+
+            return published_count
+
+        except Exception as e:
+            logger.error(f"Error reading from MongoDB or publishing: {e}")
+            return 0
+
     def close(self):
         """Close the producer and cleanup"""
         self.producer.flush()
@@ -223,7 +312,13 @@ def main():
             logger.info(f"✓ Published {count} articles from CSV")
 
         else:
-            logger.error("Please provide --csv or --test flag")
+            # Default: Publish from MongoDB (test.articles)
+            count = producer.publish_from_mongodb(
+                database="test",
+                collection="articles",
+                batch_size=args.batch_size,
+            )
+            logger.info(f"✓ Published {count} articles from MongoDB")
 
     finally:
         producer.close()

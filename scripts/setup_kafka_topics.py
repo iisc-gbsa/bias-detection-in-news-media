@@ -25,7 +25,7 @@ def create_topics():
     topics = [
         NewTopic(
             name=kafka_config.news_topic,
-            num_partitions=3,
+            num_partitions=6,
             replication_factor=1,
             topic_configs={
                 "retention.ms": "604800000",  # 7 days
