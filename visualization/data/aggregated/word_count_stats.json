@@ -2,7 +2,7 @@
   "total_articles": 303101,
   "mean_word_count": 548.0525963292764,
   "median_word_count": 464.0,
-  "std_word_count": 380.9330138847712,
+  "std_word_count": 380.9330138847711,
   "min_word_count": 2,
   "max_word_count": 54919,
   "percentiles": {
