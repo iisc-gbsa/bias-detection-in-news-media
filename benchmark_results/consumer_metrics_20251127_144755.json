@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-11-27T14:49:28.433015",
+  "processor_type": "spark_structured_streaming",
+  "config": {
+    "kafka_topic": "news",
+    "kafka_servers": "localhost:9092",
+    "mongo_uri": "mongodb://localhost:27017/",
+    "mongo_database": "bias_detection",
+    "mongo_collection": "realtime_news"
+  },
+  "metrics": {
+    "duration_seconds": 63.52159810066223,
+    "total_batches": 4,
+    "total_records_processed": 30351,
+    "total_records_written": 30351,
+    "failed_records": 0,
+    "throughput_records_per_sec": 477.80598894730235,
+    "spark_config": {
+      "executor_cores": 2,
+      "executor_memory": "4g",
+      "driver_memory": "4g",
+      "total_cpu_cores_available": 10,
+      "num_executors": 1
+    },
+    "avg_batch_processing_time_ms": 3295.3715324401855,
+    "avg_batch_size": 7587.75,
+    "avg_mongodb_write_time_ms": 1505.2697658538818,
+    "avg_executor_cpu_utilization_percent": 200.0,
+    "total_executor_cpu_time_seconds": 91.378,
+    "avg_executor_memory_used_mb": 0,
+    "avg_active_tasks": 0.0
+  },
+  "detailed_metrics": {
+    "batch_processing_times": [
+      5.43928599357605,
+      3.303438186645508,
+      3.027085065841675,
+      1.4116768836975098
+    ],
+    "batch_sizes": [
+      9996,
+      9998,
+      9995,
+      362
+    ],
+    "mongodb_write_times": [
+      1.9026250839233398,
+      1.8999040126800537,
+      1.5164530277252197,
+      0.7020969390869141
+    ]
+  }
+}

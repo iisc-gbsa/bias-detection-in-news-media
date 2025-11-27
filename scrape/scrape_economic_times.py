@@ -434,10 +434,32 @@ def save_progress(completed_dates, last_date):
         json.dump(progress, f, indent=2)
 
 
+def batch_check_existing_urls(collection, urls):
+    """
+    Check which URLs already exist in MongoDB using a single batch query.
+
+    Args:
+        collection: MongoDB collection instance
+        urls (list): List of URLs to check
+
+    Returns:
+        set: Set of URLs that already exist in the database
+    """
+    if not urls:
+        return set()
+
+    # Use $in operator to find all matching URLs in a single query
+    existing_docs = collection.find({"url": {"$in": urls}}, {"url": 1})
+    existing_urls = {doc["url"] for doc in existing_docs}
+
+    return existing_urls
+
+
 def process_single_article(article_info, collection, stats_lock, stats):
     """
     Process a single article: extract content and save to MongoDB.
     Thread-safe function for parallel processing.
+    Note: Duplicate check is now done in batch before threading.
 
     Args:
         article_info (dict): Article metadata (URL, date, etc.)
@@ -451,12 +473,6 @@ def process_single_article(article_info, collection, stats_lock, stats):
     article_url = article_info["Article Link"]
 
     try:
-        # Check if URL already exists in MongoDB
-        if collection.find_one({"url": article_url}):
-            with stats_lock:
-                stats["duplicates_skipped"] += 1
-            return (False, f"  Skipping duplicate: {article_url}")
-
         print(f"  Extracting content from: {article_url}")
 
         # Extract article content
@@ -577,7 +593,37 @@ def scrape_et_articles(start_year=2020, end_year=2024, use_cache=True, max_worke
                             save_progress(list(completed_dates), date_str)
                         continue
 
-                    # Process articles in parallel using ThreadPoolExecutor
+                    # Batch check for existing URLs to avoid duplicate processing
+                    print(f"  Checking for duplicates in batch...")
+                    all_urls = [article["Article Link"] for article in article_urls]
+                    existing_urls = batch_check_existing_urls(collection, all_urls)
+
+                    # Filter out articles that already exist
+                    new_articles = [
+                        article
+                        for article in article_urls
+                        if article["Article Link"] not in existing_urls
+                    ]
+
+                    duplicates_found = len(article_urls) - len(new_articles)
+                    if duplicates_found > 0:
+                        with stats_lock:
+                            stats["duplicates_skipped"] += duplicates_found
+                        print(
+                            f"  Found {duplicates_found} duplicates, processing {len(new_articles)} new articles"
+                        )
+
+                    if not new_articles:
+                        print(
+                            f"  All articles for {date_str} already exist in database"
+                        )
+                        # Mark date as completed
+                        if use_cache:
+                            completed_dates.add(date_str)
+                            save_progress(list(completed_dates), date_str)
+                        continue
+
+                    # Process only new articles in parallel using ThreadPoolExecutor
                     with ThreadPoolExecutor(max_workers=max_workers) as executor:
                         # Submit all article processing tasks
                         future_to_article = {
@@ -588,7 +634,7 @@ def scrape_et_articles(start_year=2020, end_year=2024, use_cache=True, max_worke
                                 stats_lock,
                                 stats,
                             ): article_info
-                            for article_info in article_urls
+                            for article_info in new_articles
                         }
 
                         # Process completed tasks as they finish

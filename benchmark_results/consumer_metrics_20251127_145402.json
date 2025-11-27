@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-11-27T14:58:18.580359",
+  "processor_type": "spark_structured_streaming",
+  "config": {
+    "kafka_topic": "news",
+    "kafka_servers": "localhost:9092",
+    "mongo_uri": "mongodb://localhost:27017/",
+    "mongo_database": "bias_detection",
+    "mongo_collection": "realtime_news"
+  },
+  "metrics": {
+    "duration_seconds": 188.53944873809814,
+    "total_batches": 16,
+    "total_records_processed": 151759,
+    "total_records_written": 151759,
+    "failed_records": 0,
+    "throughput_records_per_sec": 804.9190820050068,
+    "spark_config": {
+      "executor_cores": 2,
+      "executor_memory": "4g",
+      "driver_memory": "4g",
+      "total_cpu_cores_available": 10,
+      "num_executors": 1
+    },
+    "avg_batch_processing_time_ms": 2767.970934510231,
+    "avg_batch_size": 9484.9375,
+    "avg_mongodb_write_time_ms": 1302.8604239225388,
+    "avg_executor_cpu_utilization_percent": 200.0,
+    "total_executor_cpu_time_seconds": 399.198,
+    "avg_executor_memory_used_mb": 0,
+    "avg_active_tasks": 0.0
+  },
+  "detailed_metrics": {
+    "batch_processing_times": [
+      5.334849834442139,
+      2.937286853790283,
+      2.8523778915405273,
+      2.5754690170288086,
+      2.5694427490234375,
+      3.3331241607666016,
+      2.2893729209899902,
+      2.2790720462799072,
+      2.3794100284576416,
+      2.413358211517334,
+      2.4234611988067627,
+      3.415738105773926,
+      2.753342866897583,
+      2.2161128520965576,
+      2.802546262741089,
+      1.7125699520111084
+    ],
+    "batch_sizes": [
+      9997,
+      9997,
+      9997,
+      9997,
+      9997,
+      9998,
+      9997,
+      9997,
+      9997,
+      9997,
+      9997,
+      9997,
+      9997,
+      9997,
+      9997,
+      1803
+    ],
+    "mongodb_write_times": [
+      1.8253631591796875,
+      1.4666178226470947,
+      1.4601531028747559,
+      1.2099711894989014,
+      1.3925108909606934,
+      1.7744271755218506,
+      1.1324479579925537,
+      1.0136911869049072,
+      1.0774548053741455,
+      1.1562700271606445,
+      1.1273419857025146,
+      1.483910083770752,
+      1.2257719039916992,
+      1.1766138076782227,
+      1.4992530345916748,
+      0.8239686489105225
+    ]
+  }
+}

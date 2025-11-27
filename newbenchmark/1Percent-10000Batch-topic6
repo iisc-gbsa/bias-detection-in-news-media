@@ -1,0 +1,99 @@
+2025-11-27 14:43:17,830 - __main__ - INFO - [CONSUMER] INFO:__main__:Idle for 34.5s (no new messages), all messages consumed, stopping...
+2025-11-27 14:43:19,829 - __main__ - INFO - [CONSUMER] INFO:__main__:✓ Streaming query metrics collection stopped
+2025-11-27 14:43:19,954 - __main__ - INFO - [CONSUMER] INFO:py4j.clientserver:Closing down clientserver connection
+2025-11-27 14:43:21,773 - __main__ - INFO - [CONSUMER] INFO:py4j.clientserver:Closing down clientserver connection
+2025-11-27 14:43:21,775 - __main__ - INFO - [CONSUMER] INFO:__main__:✓ Resource monitoring stopped
+2025-11-27 14:43:21,775 - __main__ - INFO - [CONSUMER] INFO:__main__:
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] ================================================================================
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:STREAMING PROCESSOR METRICS SUMMARY
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:================================================================================
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:Duration: 43.76 seconds
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:Total Batches: 1
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:Total Records Processed: 3035
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:Total Records Written: 3035
+2025-11-27 14:43:21,776 - __main__ - INFO - [CONSUMER] INFO:__main__:Failed Records: 0
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:Throughput: 69.35 records/sec
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:Avg Batch Processing Time: 3996.70 ms
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:Avg Batch Size: 3035.0 records
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:Avg MongoDB Write Time: 1682.00 ms
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:Spark Executor Metrics:
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:  Avg CPU Utilization: 200.00%
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:  Total CPU Time: 70.75 seconds
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:  Avg Executor Memory Used: 0.00 MB
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:  Avg Active Tasks: 0.0
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:Spark Configuration:
+2025-11-27 14:43:21,778 - __main__ - INFO - [CONSUMER] INFO:__main__:  Executor Cores: 2
+2025-11-27 14:43:21,779 - __main__ - INFO - [CONSUMER] INFO:__main__:  Num Executors: 1
+2025-11-27 14:43:21,779 - __main__ - INFO - [CONSUMER] INFO:__main__:  Executor Memory: 4g
+2025-11-27 14:43:21,779 - __main__ - INFO - [CONSUMER] INFO:__main__:  Driver Memory: 4g
+2025-11-27 14:43:21,779 - __main__ - INFO - [CONSUMER] INFO:__main__:  Total CPU Cores Available: 10
+2025-11-27 14:43:21,779 - __main__ - INFO - [CONSUMER] INFO:__main__:================================================================================
+2025-11-27 14:43:21,792 - __main__ - INFO - [CONSUMER] INFO:__main__:✓ Metrics saved to: benchmark_results/consumer_metrics_20251127_144217.json
+2025-11-27 14:43:21,792 - __main__ - INFO - [CONSUMER] INFO:__main__:✓ Resource monitoring stopped
+2025-11-27 14:43:23,511 - __main__ - INFO - [CONSUMER] INFO:__main__:✓ Streaming processor stopped
+2025-11-27 14:43:23,534 - __main__ - INFO - [CONSUMER] INFO:py4j.clientserver:Closing down clientserver connection
+2025-11-27 14:43:23,534 - __main__ - INFO - [CONSUMER] Warning: sentence-transformers not available. Install with: pip install sentence-transformers
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER] Exception ignored in: <function _DeleteDummyThreadOnDel.__del__ at 0x10a189620>
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER] Traceback (most recent call last):
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER]   File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1385, in __del__
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER] TypeError: 'NoneType' object does not support the context manager protocol
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER] Exception ignored in: <function _DeleteDummyThreadOnDel.__del__ at 0x10a189620>
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER] Traceback (most recent call last):
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER]   File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1385, in __del__
+2025-11-27 14:43:23,776 - __main__ - INFO - [CONSUMER] TypeError: 'NoneType' object does not support the context manager protocol
+2025-11-27 14:43:24,635 - __main__ - INFO - ✓ Streaming consumer benchmark completed
+2025-11-27 14:43:24,635 - __main__ - INFO -
+================================================================================
+2025-11-27 14:43:24,635 - __main__ - INFO - BENCHMARK REPORT
+2025-11-27 14:43:24,635 - __main__ - INFO - ================================================================================
+2025-11-27 14:43:24,643 - __main__ - INFO -
+✓ Unified report saved to: benchmark_results/benchmark_report_20251127_144217.json
+2025-11-27 14:43:24,643 - __main__ - INFO -
+================================================================================
+2025-11-27 14:43:24,643 - __main__ - INFO - SUMMARY
+2025-11-27 14:43:24,643 - __main__ - INFO - ================================================================================
+2025-11-27 14:43:24,643 - __main__ - INFO -
+📊 Streaming Consumer (Spark + Bias Detection):
+2025-11-27 14:43:24,643 - __main__ - INFO -   Records Processed: 3035
+2025-11-27 14:43:24,643 - __main__ - INFO -   Records Written: 3035
+2025-11-27 14:43:24,643 - __main__ - INFO -   Failed Records: 0
+2025-11-27 14:43:24,643 - __main__ - INFO -   Duration: 43.76 seconds
+2025-11-27 14:43:24,643 - __main__ - INFO -
+⚡ Throughput:
+2025-11-27 14:43:24,643 - __main__ - INFO -   69.35 records/sec
+2025-11-27 14:43:24,643 - __main__ - INFO -
+⏱️  Processing Times:
+2025-11-27 14:43:24,643 - __main__ - INFO -   Avg Batch Processing: 3996.70 ms
+2025-11-27 14:43:24,643 - __main__ - INFO -   Avg MongoDB Write: 1682.00 ms
+2025-11-27 14:43:24,643 - __main__ - INFO -   Avg Batch Size: 3035.0 records
+2025-11-27 14:43:24,643 - __main__ - INFO -
+💻 Spark Executor Metrics:
+2025-11-27 14:43:24,643 - __main__ - INFO -   Avg CPU Utilization: 200.00%
+2025-11-27 14:43:24,643 - __main__ - INFO -   Total CPU Time: 70.75 seconds
+2025-11-27 14:43:24,643 - __main__ - INFO -   Avg Executor Memory: 0.00 MB
+2025-11-27 14:43:24,643 - __main__ - INFO -   Avg Active Tasks: 0.0
+2025-11-27 14:43:24,643 - __main__ - INFO -
+🔧 Spark Configuration:
+2025-11-27 14:43:24,643 - __main__ - INFO -   Executor Cores: 2
+2025-11-27 14:43:24,643 - __main__ - INFO -   Num Executors: 1
+2025-11-27 14:43:24,643 - __main__ - INFO -   Executor Memory: 4g
+2025-11-27 14:43:24,643 - __main__ - INFO -   Total CPU Cores: 10
+2025-11-27 14:43:24,643 - __main__ - INFO -
+================================================================================
+2025-11-27 14:43:24,643 - __main__ - INFO -
+✓ Benchmark completed successfully!
+
+[SUCCESS] Integrated benchmark completed!
+[INFO] Result file: benchmark_results/benchmark_report_20251127_144217.json
+
+[INFO] Quick Summary:
+Streaming Consumer (Spark + Bias Detection):
+  Processed: 3035 records
+  Written: 3035 records
+  Duration: 43s
+  Throughput: 69 rec/sec
+  Avg Batch Processing: 3996ms
+  Spark Executor Cores: 2
+  Total CPU Cores: 10

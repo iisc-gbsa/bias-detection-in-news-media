@@ -68,3 +68,4 @@ data/realtime_news.gz
 visualization/data/raw/*.csv
 data/*.gz
 data/*.csv
+checkpoints_benchmark

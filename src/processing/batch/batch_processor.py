@@ -74,11 +74,17 @@ class BatchNewsProcessor:
                 "spark.sql.streaming.checkpointLocation",
                 kafka_config.checkpoint_location,
             )
+            # NEW: Parallelism optimization settings
+            .config("spark.default.parallelism", spark_config.default_parallelism)
+            .config("spark.sql.shuffle.partitions", spark_config.sql_shuffle_partitions)
             .getOrCreate()
         )
 
         spark.sparkContext.setLogLevel("WARN")
         logger.info("✓ Spark session created for batch processing")
+        logger.info(
+            f"  Parallelism: default={spark_config.default_parallelism}, shuffle_partitions={spark_config.sql_shuffle_partitions}"
+        )
 
         return spark
 
@@ -166,11 +172,30 @@ class BatchNewsProcessor:
         logger.info(f"Writing to MongoDB: {mongo_uri}")
 
         try:
-            df.write.format("mongodb").mode("append").option(
-                "connection.uri", mongo_uri
-            ).option("database", mongo_config.database).option(
-                "collection", collection
-            ).save()
+            # MongoDB write with optimization settings
+            write_builder = (
+                df.write.format("mongodb")
+                .mode("append")
+                .option("connection.uri", mongo_uri)
+                .option("database", mongo_config.database)
+                .option("collection", collection)
+                # Write optimization options
+                .option(
+                    "ordered", "false" if not mongo_config.ordered_writes else "true"
+                )
+                .option("maxBatchSize", str(mongo_config.max_batch_size))
+                .option("maxPoolSize", str(mongo_config.connection_pool_size))
+                .option("retryWrites", "true" if mongo_config.retry_writes else "false")
+                .option("socketTimeoutMS", str(mongo_config.socket_timeout_ms))
+                .option("connectTimeoutMS", str(mongo_config.connect_timeout_ms))
+                .option("w", str(mongo_config.write_concern_w))
+            )
+
+            # Add journal setting if write concern allows
+            if not mongo_config.write_concern_journal:
+                write_builder = write_builder.option("journal", "false")
+
+            write_builder.save()
 
             logger.info(f"✓ Successfully wrote {df.count()} records to MongoDB")
 

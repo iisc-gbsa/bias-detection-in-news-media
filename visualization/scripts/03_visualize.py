@@ -513,14 +513,22 @@ class BiasVisualizer:
         """Scatter matrix showing relationships between bias types."""
         cols = [f'{bt}_mean' for bt in self.bias_types if f'{bt}_mean' in self.yearly_df.columns]
 
+        print(f"DEBUG: bias_types = {self.bias_types}")
+        print(f"DEBUG: yearly_df columns = {list(self.yearly_df.columns)}")
+        print(f"DEBUG: Found columns for scatter matrix: {cols}")
+        print(f"DEBUG: yearly_df shape: {self.yearly_df.shape}")
+
         if len(cols) < 2:
+            print(f"WARNING: Not enough columns for scatter matrix (need >= 2, found {len(cols)})")
             return
 
         plot_df = self.yearly_df[cols].copy()
+        print(f"DEBUG: plot_df shape: {plot_df.shape}, has NaN: {plot_df.isna().sum().sum()}")
+
         rename_map = {f'{bt}_mean': self.labels.get(bt, bt) for bt in self.bias_types}
         plot_df = plot_df.rename(columns=rename_map)
 
-        fig = plt.figure(figsize=(14, 14))
+        # scatter_matrix creates its own figure, so don't create one beforehand
         axes = pd.plotting.scatter_matrix(plot_df, alpha=0.6, figsize=(14, 14),
                                           diagonal='hist', color='steelblue')
 
@@ -529,6 +537,8 @@ class BiasVisualizer:
             ax.yaxis.label.set_rotation(0)
             ax.yaxis.label.set_ha('right')
 
+        # Get the figure that scatter_matrix created
+        fig = plt.gcf()
         fig.suptitle('Bias Types Scatter Matrix', fontsize=16, y=1.02)
 
         self._save_figure(fig, 'bias_scatter_matrix', 'comparisons')
