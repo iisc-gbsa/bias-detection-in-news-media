@@ -27,7 +27,6 @@ HF_TOKEN = os.getenv(
     "HUGGING_FACE_HUB_TOKEN",
     ""
     #USE YOUR OWN HUGGING_FACE_HUB_TOKEN
-    # "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"
 )
 
 src_lang, tgt_lang = "tam_Taml", "eng_Latn"
