@@ -91,6 +91,14 @@ def clean_content(content):
     content = re.sub(
         r"(?<=[\w])(?=[\W])", " ", content
     )  # Add space before non-word characters
+    
+    PHRASES_TO_REMOVE = [
+        "1  2  3  View  all  Stories",
+        " Results  HPCL  Total  income  currency  refining  margin  company  hpcl  (What 's  moving  Sensex  and  Nifty  Track  latest  market  news  , stock  tips  , Budget  2025  , Share  Market  on  Budget  2025  and  expert  advice  , on  ETMarkets  . Also , ETMarkets .com  is  now  on  Telegram . For  fastest  news  alerts  on  financial  markets , investment  strategies  and  stocks  alerts , to  our  Telegram  feeds  .) to  and  read  the  Economic  Times  ePaper  Online .and  Sensex  Today  . Top  Trending  Stocks : SBI  Share  Price  , Axis  Bank  Share  Price  , HDFC  Bank  Share  Price  , Infosys  Share  Price  , Wipro  Share  Price  , NTPC  Share  Price  ... more  less  HPCL  Q  1  Results  HPCL  Total  income  currency  refining  margin  company  hpcl  (What 's  moving  Sensex  and  Nifty  Track  latest  market  news  , stock  tips  , Budget  2025  , Share  Market  on  Budget  2025  and  expert  advice  , on  ETMarkets  . Also , ETMarkets .com  is  now  on  Telegram . For  fastest  news  alerts  on  financial  markets , investment  strategies  and  stocks  alerts , to  our  Telegram  feeds  .) to  and  read  the  Economic  Times  ePaper  Online .and  Sensex  Today  . Top  Trending  Stocks : SBI  Share  Price  , Axis  Bank  Share  Price  , HDFC  Bank  Share  Price  , Infosys  Share  Price  , Wipro  Share  Price  , NTPC  Share  Price  ... more  less  Prime  Exclusives  Investment  Ideas  Stock  Report  Plus  ePaper  Wealth  Edition  GAIL  built  nation 's  gas  pipelines  for  4  decades . Now  it  is  battling  to  retain  the  edge  Nadella , Ellison , Pichai  have  all  jumped  on  the  AI  bandwagon . But  why  is  Buffett  staying  away ? Investors ' 4 -year  roller -coaster  ride  on  Paytm : How  secure  is  the  future ? As  Indian  IT  chases  the  hottest  AI  role , cost  becomes  a  question . Stock  Radar : GMR  Airports  stock  breaks  out  from  rectangular  pattern  to  hit  fresh  record  highs ; time  to  buy  or  book  profits ? Multibagger  or  IBC  - Part  33 : An  auto  ancillary  caught  between  ICE  engine  & EV  battery , will  management  be  able  to  sail  through ? 1  2  3  View  all  Stories",
+    ]
+    
+    for phrase in PHRASES_TO_REMOVE:
+        content = content.replace(phrase, "")
 
     return content.strip()
 
