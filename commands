@@ -1,0 +1,8 @@
+docker-compose up -d
+docker ps
+http://localhost:8080
+http://localhost:8081
+http://localhost:4040
+ PYTHONPATH=. python scripts/setup_kafka_topics.py
+PYTHONPATH=. python scripts/simple_producer.py --producer-batch-size 10000 --percentage 20
+PYTHONPATH=. python src/processing/streaming/streaming_processor.py --console | grep -v 'WARN KafkaDataConsumer'

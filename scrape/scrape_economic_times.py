@@ -498,6 +498,7 @@ def process_single_article(article_info, collection, stats_lock, stats):
 
             # Add metadata from URL scraping
             content["media_name"] = article_info["Media Name"]
+            content["published_date"] = article_info["Date"]
             content["scrape_date"] = article_info["Date"]
             content["scraped_at"] = datetime.now().isoformat()
 
