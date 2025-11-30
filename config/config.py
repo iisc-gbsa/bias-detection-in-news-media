@@ -25,7 +25,7 @@ class KafkaConfig:
 class MongoConfig:
     """MongoDB configuration"""
 
-    uri: str = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+    uri: str = os.getenv("MONGO_URI", "mongodb://localhost:27018/")
     database: str = "bias_detection"
     collection_daily: str = "daily_news"
     collection_realtime: str = "realtime_news"

@@ -43,25 +43,25 @@ services:
       retries: 5
 
   # MongoDB
-  # mongodb:
-  #   image: mongo:7.0
-  #   hostname: mongodb
-  #   container_name: mongodb
-  #   command: mongod --port 27018
-  #   ports:
-  #     - "27018:27018"
-  #   environment:
-  #     MONGO_INITDB_DATABASE: bias_detection
-  #   volumes:
-  #     - mongodb_data:/data/db
-  #     - mongodb_config:/data/configdb
-  #   networks:
-  #     - bias-detection-network
-  #   healthcheck:
-  #     test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
-  #     interval: 10s
-  #     timeout: 5s
-  #     retries: 5
+  mongodb:
+    image: mongo:7.0
+    hostname: mongodb
+    container_name: mongodb
+    command: mongod --port 27018
+    ports:
+      - "27018:27018"
+    environment:
+      MONGO_INITDB_DATABASE: bias_detection
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - bias-detection-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   # Kafka UI (optional - for monitoring)
   kafka-ui:
@@ -80,20 +80,20 @@ services:
       - bias-detection-network
 
   # # MongoDB Express (optional - for MongoDB GUI)
-  # mongo-express:
-  #   image: mongo-express:1.0.2
-  #   hostname: mongo-express
-  #   container_name: mongo-express
-  #   depends_on:
-  #     - mongodb
-  #   ports:
-  #     - "8081:8081"
-  #   environment:
-  #     ME_CONFIG_MONGODB_URL: mongodb://mongodb:27018/
-  #     ME_CONFIG_BASICAUTH_USERNAME: admin
-  #     ME_CONFIG_BASICAUTH_PASSWORD: admin
-  #   networks:
-  #     - bias-detection-network
+  mongo-express:
+    image: mongo-express:1.0.2
+    hostname: mongo-express
+    container_name: mongo-express
+    depends_on:
+      - mongodb
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://mongodb:27018/
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin
+    networks:
+      - bias-detection-network
 
 networks:
   bias-detection-network:
