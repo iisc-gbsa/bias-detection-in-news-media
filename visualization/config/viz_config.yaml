@@ -1,0 +1,51 @@
+mongodb:
+  uri: "mongodb://localhost:27017/"
+  database: "bias_detection"
+  collection: "realtime_news"
+
+date_range:
+  start: "1997-01-01"
+  end: "2025-12-31"
+
+# Only 5-year moving average (in years for yearly aggregation)
+moving_averages:
+  windows: [5] # 5-year MA only
+
+bias_types:
+  - political_bias
+  - gender_bias
+  - religious_bias
+  - caste_bias
+  - region_bias
+
+bias_type_labels:
+  political_bias: "Political"
+  gender_bias: "Gender"
+  religious_bias: "Religious"
+  caste_bias: "Caste"
+  region_bias: "Region"
+
+output:
+  base_dir: "./outputs"
+  formats: ["png"]
+  dpi: 300
+
+filters:
+  min_articles: 1
+  high_bias_threshold: 0.6
+
+colors:
+  political_bias: "#E74C3C"
+  gender_bias: "#3498DB"
+  religious_bias: "#9B59B6"
+  caste_bias: "#27AE60"
+  region_bias: "#F39C12"
+
+# Style settings for matplotlib/seaborn
+plot_style:
+  figure_size: [14, 8]
+  font_size: 12
+  title_size: 16
+  label_size: 14
+  line_width: 2
+  marker_size: 8

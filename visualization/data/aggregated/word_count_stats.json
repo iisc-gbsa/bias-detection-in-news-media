@@ -1,0 +1,51 @@
+{
+  "total_articles": 303101,
+  "mean_word_count": 548.0525963292764,
+  "median_word_count": 464.0,
+  "std_word_count": 380.9330138847711,
+  "min_word_count": 2,
+  "max_word_count": 54919,
+  "percentiles": {
+    "10": 179.0,
+    "25": 275.0,
+    "50": 464.0,
+    "75": 749.0,
+    "90": 996.0,
+    "95": 1185.0,
+    "99": 1725.0
+  },
+  "word_count_ranges": {
+    "0-100": 6593,
+    "101-300": 81165,
+    "301-500": 74531,
+    "501-1000": 111041,
+    "1001-2000": 28204,
+    "2000+": 1567
+  },
+  "by_media": {
+    "THE ECONOMIC TIMES": {
+      "count": 109445,
+      "mean": 839.5,
+      "median": 782.0,
+      "std": 357.62,
+      "min": 21,
+      "max": 15744
+    },
+    "THE INDIAN EXPRESS": {
+      "count": 191633,
+      "mean": 381.38,
+      "median": 328.0,
+      "std": 281.1,
+      "min": 2,
+      "max": 54919
+    },
+    "THE TIMES OF INDIA": {
+      "count": 2023,
+      "mean": 569.03,
+      "median": 505.0,
+      "std": 332.34,
+      "min": 3,
+      "max": 7427
+    }
+  }
+}

@@ -1,0 +1,732 @@
+Date,Day,Is_Holiday,Holiday_Name,Holiday_Category,Events_Count,Event_Good_Count,Event_Bad_Count,Event_Sentiment,Event_Texts,Event_Links
+2007-01-01,Monday,False,,,0,0,0,neutral,,
+2007-01-02,Tuesday,False,,,0,0,0,neutral,,
+2007-01-03,Wednesday,False,,,0,0,0,neutral,,
+2007-01-04,Thursday,False,,,0,0,0,neutral,,
+2007-01-05,Friday,False,,,1,0,0,neutral,"The Taiwan High Speed Rail opened, connecting Taipei and Kaohsiung.",https://en.wikipedia.org/wiki/Taiwan_High_Speed_Rail
+2007-01-06,Saturday,False,,,0,0,0,neutral,,
+2007-01-07,Sunday,False,,,0,0,0,neutral,,
+2007-01-08,Monday,False,,,0,0,0,neutral,,
+2007-01-09,Tuesday,False,,,1,0,0,neutral,Apple CEO Steve Jobs introduces the original iPhone at a Macworld keynote in San Francisco.,https://en.wikipedia.org/wiki/Apple_Inc.
+2007-01-10,Wednesday,False,,,1,0,0,neutral,The strongest storm in the United Kingdom in 17 years kills 14 people and Germany sees the worst storm since 1999 with 13 deaths. Cyclone Kyrill causes at least 44 deaths across 20 countries in Western Europe.,https://en.wikipedia.org/wiki/1999
+2007-01-11,Thursday,False,,,2,0,0,neutral,"Comet C/2006 P1 (McNaught), one of the brightest comets ever observed is at its zenith visible during the day. || Comet McNaught (pictured) reached perihelion, becoming the brightest comet in over 40 years, with an apparent magnitude of −5.5.",https://en.wikipedia.org/wiki/Comet_McNaught || https://en.wikipedia.org/wiki/Comet_McNaught
+2007-01-12,Friday,False,,,0,0,0,neutral,,
+2007-01-13,Saturday,False,,,0,0,0,neutral,,
+2007-01-14,Sunday,False,,,2,1,0,good,"The 110th United States Congress convenes, electing Nancy Pelosi as the first female Speaker of the House in U.S. history. || Nancy Pelosi became Speaker of the United States House of Representatives, becoming the highest-ranking woman in the history of the U.S. government.",https://en.wikipedia.org/wiki/110th_United_States_Congress || https://en.wikipedia.org/wiki/Nancy_Pelosi
+2007-01-15,Monday,False,,,0,0,0,neutral,,
+2007-01-16,Tuesday,False,,,0,0,0,neutral,,
+2007-01-17,Wednesday,False,,,1,0,0,neutral,The Doomsday Clock is set to five minutes to midnight in response to North Korea's nuclear testing.,https://en.wikipedia.org/wiki/Doomsday_Clock
+2007-01-18,Thursday,False,,,2,0,0,neutral,"A general strike begins in Guinea in an attempt to get President Lansana Conté to resign. || A general strike began in Guinea as an attempt to force President Lansana Conté to resign, eventually resulting in the appointment of two new prime ministers.",https://en.wikipedia.org/wiki/2007_Guinean_general_strike || https://en.wikipedia.org/wiki/2007_Guinean_general_strike
+2007-01-19,Friday,False,,,4,2,2,bad,"Turkish-Armenian journalist Hrant Dink is assassinated in front of his newspaper's Istanbul office by 17-year-old Turkish ultra-nationalist Ogün Samast. || Four-man Team N2i, using only skis and kites, completes a 1,093-mile (1,759 km) trek to reach the Antarctic pole of inaccessibility for the first time since 1965 and for the first time ever without mechanical assistance. || Turkish-Armenian journalist and human-rights activist Hrant Dink was assassinated by a Turkish nationalist in Istanbul. || A four-man team, using only skis and kites, completed a 1,093-mile (1,759 km) trek to reach the Southern Pole of Inaccessibility, the first people to get there since 1967, and the first to do so on foot.",https://en.wikipedia.org/wiki/Hrant_Dink || https://en.wikipedia.org/wiki/Henry_Cookson || https://en.wikipedia.org/wiki/Hrant_Dink || https://en.wikipedia.org/wiki/Snowkiting
+2007-01-20,Saturday,False,,,0,0,0,neutral,,
+2007-01-21,Sunday,False,,,0,0,0,neutral,,
+2007-01-22,Monday,False,,,1,0,1,bad,"At least 88 people are killed when two car bombs explode in the Bab Al-Sharqi market in central Baghdad, Iraq.",https://en.wikipedia.org/wiki/22_January_2007_Baghdad_bombings
+2007-01-23,Tuesday,False,,,0,0,0,neutral,,
+2007-01-24,Wednesday,False,,,0,0,0,neutral,,
+2007-01-25,Thursday,False,,,0,0,0,neutral,,
+2007-01-26,Friday,True,Republic Day,general,0,0,0,neutral,,
+2007-01-27,Saturday,False,,,0,0,0,neutral,,
+2007-01-28,Sunday,False,,,0,0,0,neutral,,
+2007-01-29,Monday,False,,,0,0,0,neutral,,
+2007-01-30,Tuesday,True,Muharram,muslim,1,0,0,neutral,"Microsoft Corporation releases Windows Vista, a major release of the operating system Microsoft Windows and the NT based kernel.",https://en.wikipedia.org/wiki/Microsoft
+2007-01-31,Wednesday,False,,,2,0,0,neutral,"Emergency officials in Boston mistakenly identified battery-powered LED placards depicting characters from Aqua Teen Hunger Force as Improvised explosive devices (IEDs), causing a panic. || Emergency officials in Boston mistakenly identified LED placards depicting characters from Aqua Teen Hunger Force as IEDs, causing a panic.",https://en.wikipedia.org/wiki/Aqua_Teen_Hunger_Force || https://en.wikipedia.org/wiki/Aqua_Teen_Hunger_Force
+2007-02-01,Thursday,False,,,0,0,0,neutral,,
+2007-02-02,Friday,False,,,1,0,1,bad,A Baghdad market bombing kills at least 135 people and injures a further 339.,https://en.wikipedia.org/wiki/February_2007_Al-Saydiya_market_bombing
+2007-02-03,Saturday,False,,,2,0,2,bad,"Police officer Filippo Raciti is killed when a clash breaks out in the Sicily derby between Catania and Palermo, in the Serie A, the top flight of Italian football. This event led to major changes in stadium regulations in Italy. || Following a Derby di Sicilia match in Catania, football violence caused the death of police officer Filippo Raciti, leading to new safety regulations at Italian sporting events.",https://en.wikipedia.org/wiki/Catania_football_riot || https://en.wikipedia.org/wiki/Derby_di_Sicilia
+2007-02-04,Sunday,False,,,1,0,0,neutral,The National Weather Service in the United States switches from the Fujita scale to the new Enhanced Fujita scale to measure the intensity and strength of tornadoes.,https://en.wikipedia.org/wiki/National_Weather_Service
+2007-02-05,Monday,False,,,0,0,0,neutral,,
+2007-02-06,Tuesday,False,,,0,0,0,neutral,,
+2007-02-07,Wednesday,False,,,0,0,0,neutral,,
+2007-02-08,Thursday,False,,,0,0,0,neutral,,
+2007-02-09,Friday,False,,,0,0,0,neutral,,
+2007-02-10,Saturday,False,,,0,0,0,neutral,,
+2007-02-11,Sunday,False,,,0,0,0,neutral,,
+2007-02-12,Monday,False,,,0,0,0,neutral,,
+2007-02-13,Tuesday,False,,,1,0,0,neutral,Taiwan opposition leader Ma Ying-jeou resigns as the chairman of the Kuomintang party after being indicted on charges of embezzlement during his tenure as the mayor of Taipei; Ma also announces his candidacy for the 2008 presidential election.,https://en.wikipedia.org/wiki/Taiwan
+2007-02-14,Wednesday,False,,,1,0,1,bad,"The first of several bombings in Zahedan, Iran, killed 18 members of the Revolutionary Guards.",https://en.wikipedia.org/wiki/2007_Zahedan_bombings
+2007-02-15,Thursday,False,,,0,0,0,neutral,,
+2007-02-16,Friday,True,Maha Shivaratri,general,0,0,0,neutral,,
+2007-02-17,Saturday,False,,,0,0,0,neutral,,
+2007-02-18,Sunday,False,,,0,0,0,neutral,,
+2007-02-19,Monday,False,,,0,0,0,neutral,,
+2007-02-20,Tuesday,False,,,0,0,0,neutral,,
+2007-02-21,Wednesday,False,,,0,0,0,neutral,,
+2007-02-22,Thursday,False,,,0,0,0,neutral,,
+2007-02-23,Friday,False,,,1,0,0,neutral,"A train derails on an evening express service near Grayrigg, Cumbria, England, killing one person and injuring 88. This results in hundreds of points being checked over the UK after a few similar accidents.",https://en.wikipedia.org/wiki/Grayrigg_derailment
+2007-02-24,Saturday,False,,,1,1,0,good,"Japan launches its fourth spy satellite, stepping up its ability to monitor potential threats such as North Korea.",https://en.wikipedia.org/wiki/Reconnaissance_satellite
+2007-02-25,Sunday,False,,,0,0,0,neutral,,
+2007-02-26,Monday,False,,,0,0,0,neutral,,
+2007-02-27,Tuesday,False,,,1,0,0,neutral,"Chinese stock bubble of 2007: The Shanghai Stock Exchange falls 9%, the largest daily fall in ten years, following speculation about a crackdown on illegal share offerings and trading, and fears about accelerating inflation.",https://en.wikipedia.org/wiki/Chinese_stock_bubble_of_2007
+2007-02-28,Wednesday,False,,,0,0,0,neutral,,
+2007-03-01,Thursday,False,,,0,0,0,neutral,,
+2007-03-02,Friday,False,,,0,0,0,neutral,,
+2007-03-03,Saturday,False,,,0,0,0,neutral,,
+2007-03-04,Sunday,False,,,1,1,0,good,"Fourteen-year-old English schoolgirl Charlotte Shaw drowned on Dartmoor, becoming the first person to die in connection with the annual Ten Tors challenge.",https://en.wikipedia.org/wiki/Death_of_Charlotte_Shaw
+2007-03-05,Monday,False,,,2,0,1,bad,"Reform of the House of Lords: The British House of Commons votes to make the upper chamber, the House of Lords, 100% elected. || Garuda Indonesia Flight 200 crashes at Adisutjipto International Airport in the Special Region of Yogyakarta, Indonesia, killing 21 people.",https://en.wikipedia.org/wiki/Reform_of_the_House_of_Lords || https://en.wikipedia.org/wiki/Garuda_Indonesia_Flight_200
+2007-03-06,Tuesday,False,,,0,0,0,neutral,,
+2007-03-07,Wednesday,False,,,0,0,0,neutral,,
+2007-03-08,Thursday,False,,,0,0,0,neutral,,
+2007-03-09,Friday,False,,,1,0,0,neutral,"Tornadoes break out across the southern United States, killing at least 20 people, including eight at Enterprise High School.",https://en.wikipedia.org/wiki/Tornado
+2007-03-10,Saturday,False,,,0,0,0,neutral,,
+2007-03-11,Sunday,False,,,1,0,1,bad,"Georgian authorities accused Russia of orchestrating a helicopter attack in the Kodori Valley, in the breakaway territory of Abkhazia.",https://en.wikipedia.org/wiki/2007_Georgia_helicopter_incident
+2007-03-12,Monday,False,,,0,0,0,neutral,,
+2007-03-13,Tuesday,False,,,0,0,0,neutral,,
+2007-03-14,Wednesday,False,,,1,0,1,bad,"The Nandigram violence in Nandigram, West Bengal, results in the deaths of at least 14 people.",https://en.wikipedia.org/wiki/Nandigram_violence
+2007-03-15,Thursday,False,,,0,0,0,neutral,,
+2007-03-16,Friday,False,,,0,0,0,neutral,,
+2007-03-17,Saturday,False,,,0,0,0,neutral,,
+2007-03-18,Sunday,False,,,0,0,0,neutral,,
+2007-03-19,Monday,False,,,0,0,0,neutral,,
+2007-03-20,Tuesday,False,,,0,0,0,neutral,,
+2007-03-21,Wednesday,False,,,0,0,0,neutral,,
+2007-03-22,Thursday,False,,,0,0,0,neutral,,
+2007-03-23,Friday,False,,,0,0,0,neutral,,
+2007-03-24,Saturday,False,,,0,0,0,neutral,,
+2007-03-25,Sunday,False,,,0,0,0,neutral,,
+2007-03-26,Monday,False,,,0,0,0,neutral,,
+2007-03-27,Tuesday,False,,,0,0,0,neutral,,
+2007-03-28,Wednesday,False,,,0,0,0,neutral,,
+2007-03-29,Thursday,False,,,0,0,0,neutral,,
+2007-03-30,Friday,False,,,0,0,0,neutral,,
+2007-03-31,Saturday,True,Mahavir Jayanti,general,0,0,0,neutral,,
+2007-04-01,Sunday,True,Milad-un-Nabi,muslim,1,0,1,bad,The cruise ship MS Sea Diamond strikes a volcanic reef near Nea Kameni and sinks the next day.  Two passengers were never recovered and are presumed dead.,https://en.wikipedia.org/wiki/Cruise_ship
+2007-04-02,Monday,False,,,0,0,0,neutral,,
+2007-04-03,Tuesday,False,,,0,0,0,neutral,,
+2007-04-04,Wednesday,False,,,0,0,0,neutral,,
+2007-04-05,Thursday,False,,,0,0,0,neutral,,
+2007-04-06,Friday,True,Good Friday,christian,1,1,0,good,"Conventional-Train World Speed Record: A French TGV train on the LGV Est high speed line sets an official new world speed record of 574.8 km/h (159.6 m/s, 357.2 mph).",https://en.wikipedia.org/wiki/TGV_world_speed_record
+2007-04-07,Saturday,False,,,0,0,0,neutral,,
+2007-04-08,Sunday,False,,,0,0,0,neutral,,
+2007-04-09,Monday,False,,,0,0,0,neutral,,
+2007-04-10,Tuesday,False,,,0,0,0,neutral,,
+2007-04-11,Wednesday,False,,,1,0,1,bad,Algiers bombings: Two bombings in Algiers kill 33 people and wound a further 222 others.,https://en.wikipedia.org/wiki/2007_Algiers_Government_Palace_bombings
+2007-04-12,Thursday,False,,,1,0,1,bad,"A suicide bomber penetrates the Green Zone and detonates in a cafeteria within a parliament building, killing Iraqi MP Mohammed Awad and wounding more than twenty other people.",https://en.wikipedia.org/wiki/2007_Iraqi_Parliament_bombing
+2007-04-13,Friday,False,,,0,0,0,neutral,,
+2007-04-14,Saturday,False,,,0,0,0,neutral,,
+2007-04-15,Sunday,False,,,0,0,0,neutral,,
+2007-04-16,Monday,False,,,2,0,2,bad,"Virginia Tech shooting: Seung-Hui Cho murders 32 people and injures 17 before committing suicide. || In one of the deadliest shooting incidents in United States history, a gunman killed 32 people and wounded over 20 more before committing suicide at the Virginia Polytechnic Institute and State University in Blacksburg, Virginia (memorial pictured).",https://en.wikipedia.org/wiki/Virginia_Tech_shooting || https://en.wikipedia.org/wiki/Virginia_Tech_shooting
+2007-04-17,Tuesday,False,,,0,0,0,neutral,,
+2007-04-18,Wednesday,False,,,1,0,0,neutral,"A ladle spilled 30 tonnes (33 tons) of molten steel in a factory in Liaoning, China, killing 32 workers.",https://en.wikipedia.org/wiki/Qinghe_Special_Steel_Corporation_disaster
+2007-04-19,Thursday,False,,,0,0,0,neutral,,
+2007-04-20,Friday,False,,,1,0,1,bad,"Johnson Space Center shooting: William Phillips barricades himself with a handgun in NASA's Johnson Space Center in Houston, Texas before killing a male hostage and himself.",https://en.wikipedia.org/wiki/Johnson_Space_Center_shooting
+2007-04-21,Saturday,False,,,0,0,0,neutral,,
+2007-04-22,Sunday,False,,,0,0,0,neutral,,
+2007-04-23,Monday,False,,,1,1,0,good,Boris Yeltsin's funeral: The first to be sanctioned by the Russian Orthodox Church for a head of state since the funeral of Emperor Alexander III in 1894.,https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Boris_Yeltsin
+2007-04-24,Tuesday,False,,,1,0,1,bad,"Controversy surrounding the relocation of the Bronze Soldier of Tallinn, a Soviet Red Army World War II memorial in Tallinn, Estonia, erupted into mass protests and riots.",https://en.wikipedia.org/wiki/Bronze_Soldier_of_Tallinn
+2007-04-25,Wednesday,False,,,0,0,0,neutral,,
+2007-04-26,Thursday,False,,,0,0,0,neutral,,
+2007-04-27,Friday,False,,,0,0,0,neutral,,
+2007-04-28,Saturday,False,,,0,0,0,neutral,,
+2007-04-29,Sunday,False,,,2,0,1,bad,"Estonian authorities remove the Bronze Soldier, a Soviet Red Army war memorial in Tallinn, amid political controversy with Russia. || Israeli archaeologists discover the tomb of Herod the Great south of Jerusalem.",https://en.wikipedia.org/wiki/Estonia || https://en.wikipedia.org/wiki/Israel
+2007-04-30,Monday,False,,,0,0,0,neutral,,
+2007-05-01,Tuesday,False,,,0,0,0,neutral,,
+2007-05-02,Wednesday,True,Buddha Purnima,general,0,0,0,neutral,,
+2007-05-03,Thursday,False,,,2,0,0,neutral,"The three-year-old British girl Madeleine McCann disappears in Praia da Luz, Portugal, starting ""the most heavily reported missing-person case in modern history"". || Three-year-old British girl Madeleine McCann disappeared from a holiday apartment in Praia da Luz, Portugal; she has never been found.",https://en.wikipedia.org/wiki/Disappearance_of_Madeleine_McCann || https://en.wikipedia.org/wiki/Disappearance_of_Madeleine_McCann
+2007-05-04,Friday,False,,,1,1,0,good,"Greensburg, Kansas is almost completely destroyed by the 2007 Greensburg tornado, a 1.7-mile wide EF5 tornado. It was the first-ever tornado to be rated as such with the new Enhanced Fujita scale.",https://en.wikipedia.org/wiki/Greensburg%2C_Kansas
+2007-05-05,Saturday,False,,,0,0,0,neutral,,
+2007-05-06,Sunday,False,,,2,0,2,bad,"Kenya Airways Flight 507 crashes after takeoff from Douala International Airport in Douala, Cameroon, killing all 114 aboard, making it the deadliest aircraft disaster in Cameroon. || Kenya Airways Flight 507 crashed immediately after takeoff from Douala International Airport in Cameroon, resulting in the deaths of all 114 people aboard.",https://en.wikipedia.org/wiki/Kenya_Airways_Flight_507 || https://en.wikipedia.org/wiki/Kenya_Airways_Flight_507
+2007-05-07,Monday,False,,,0,0,0,neutral,,
+2007-05-08,Tuesday,False,,,0,0,0,neutral,,
+2007-05-09,Wednesday,False,,,0,0,0,neutral,,
+2007-05-10,Thursday,False,,,0,0,0,neutral,,
+2007-05-11,Friday,False,,,0,0,0,neutral,,
+2007-05-12,Saturday,False,,,0,0,0,neutral,,
+2007-05-13,Sunday,False,,,0,0,0,neutral,,
+2007-05-14,Monday,False,,,0,0,0,neutral,,
+2007-05-15,Tuesday,False,,,0,0,0,neutral,,
+2007-05-16,Wednesday,False,,,0,0,0,neutral,,
+2007-05-17,Thursday,False,,,1,1,0,good,Trains from North and South Korea cross the 38th Parallel in a test-run agreed by both governments. This is the first time that trains have crossed the Demilitarized Zone since 1953.,https://en.wikipedia.org/wiki/North_Korea
+2007-05-18,Friday,False,,,0,0,0,neutral,,
+2007-05-19,Saturday,False,,,1,0,0,neutral,President of Romania Traian Băsescu survives an impeachment referendum and returns to office from suspension.,https://en.wikipedia.org/wiki/President_of_Romania
+2007-05-20,Sunday,False,,,0,0,0,neutral,,
+2007-05-21,Monday,False,,,0,0,0,neutral,,
+2007-05-22,Tuesday,False,,,0,0,0,neutral,,
+2007-05-23,Wednesday,False,,,0,0,0,neutral,,
+2007-05-24,Thursday,False,,,0,0,0,neutral,,
+2007-05-25,Friday,False,,,0,0,0,neutral,,
+2007-05-26,Saturday,False,,,0,0,0,neutral,,
+2007-05-27,Sunday,False,,,0,0,0,neutral,,
+2007-05-28,Monday,False,,,0,0,0,neutral,,
+2007-05-29,Tuesday,False,,,0,0,0,neutral,,
+2007-05-30,Wednesday,False,,,0,0,0,neutral,,
+2007-05-31,Thursday,False,,,0,0,0,neutral,,
+2007-06-01,Friday,False,,,0,0,0,neutral,,
+2007-06-02,Saturday,False,,,0,0,0,neutral,,
+2007-06-03,Sunday,False,,,0,0,0,neutral,,
+2007-06-04,Monday,False,,,0,0,0,neutral,,
+2007-06-05,Tuesday,False,,,0,0,0,neutral,,
+2007-06-06,Wednesday,False,,,0,0,0,neutral,,
+2007-06-07,Thursday,False,,,0,0,0,neutral,,
+2007-06-08,Friday,False,,,0,0,0,neutral,,
+2007-06-09,Saturday,False,,,0,0,0,neutral,,
+2007-06-10,Sunday,False,,,0,0,0,neutral,,
+2007-06-11,Monday,False,,,0,0,0,neutral,,
+2007-06-12,Tuesday,False,,,3,1,1,bad,"Newcastle, New South Wales, Australia, is hit by the State's worst storms and flooding in 30 years resulting in the death of nine people and the grounding of a trade ship, the MV Pasha Bulker. || Space Shuttle Atlantis is launched on STS-117 carrying two truss segments and solar arrays to the International Space Station. || A major storm caused the bulk carrier Pasha Bulker to run aground in New South Wales, Australia.",https://en.wikipedia.org/wiki/Newcastle%2C_New_South_Wales || https://en.wikipedia.org/wiki/Space_Shuttle_Atlantis || https://en.wikipedia.org/wiki/2007_New_South_Wales_storms
+2007-06-13,Wednesday,False,,,0,0,0,neutral,,
+2007-06-14,Thursday,False,,,0,0,0,neutral,,
+2007-06-15,Friday,False,,,2,0,1,bad,"Mudslides in Chittagong, Bangladesh, kill 130 people. || Mudslides caused by heavy monsoon rainfall and exacerbated by hill cutting killed at least 128 people in Chittagong, Bangladesh.",https://en.wikipedia.org/wiki/2007_Chittagong_mudslides || https://en.wikipedia.org/wiki/2007_Chittagong_mudslides
+2007-06-16,Saturday,False,,,0,0,0,neutral,,
+2007-06-17,Sunday,False,,,0,0,0,neutral,,
+2007-06-18,Monday,False,,,2,0,2,bad,"The Al Askari Mosque is bombed for a second time. || Insurgents carried out a second bombing at the al-Askari Mosque, one of the holiest sites in Shia Islam.",https://en.wikipedia.org/wiki/Al-Askari_Shrine || https://en.wikipedia.org/wiki/2007_al-Askari_mosque_bombing
+2007-06-19,Tuesday,False,,,1,0,1,bad,The al-Khilani Mosque bombing in Baghdad leaves 78 people dead and another 218 injured.,https://en.wikipedia.org/wiki/2007_al-Khilani_mosque_bombing
+2007-06-20,Wednesday,False,,,0,0,0,neutral,,
+2007-06-21,Thursday,False,,,0,0,0,neutral,,
+2007-06-22,Friday,False,,,1,1,0,good,"The small town of Elie, Manitoba is hit by Canada’s most intense tornado on record.",https://en.wikipedia.org/wiki/Elie%2C_Manitoba
+2007-06-23,Saturday,False,,,0,0,0,neutral,,
+2007-06-24,Sunday,False,,,0,0,0,neutral,,
+2007-06-25,Monday,False,,,1,0,1,bad,"PMTair Flight 241 crashes in the Dâmrei Mountains in Kampot Province, Cambodia, killing all 22 people on board.",https://en.wikipedia.org/wiki/PMTair_Flight_241
+2007-06-26,Tuesday,False,,,1,1,0,good,Pope Benedict XVI reinstates the traditional laws of papal election in which a successful candidate must receive two-thirds of the votes.,https://en.wikipedia.org/wiki/Pope_Benedict_XVI
+2007-06-27,Wednesday,False,,,3,0,2,bad,"Tony Blair resigns as British Prime Minister, a position he had held since 1997. Chancellor Gordon Brown succeeds him. || The Brazilian Military Police invades the favelas of Complexo do Alemão in an episode which is remembered as the Complexo do Alemão massacre. || As a result of an ongoing conflict between drug dealers and police in the favelas of Rio de Janeiro, a large military and civil police operation killed 19 people and injured several others.",https://en.wikipedia.org/wiki/Tony_Blair || https://en.wikipedia.org/wiki/Military_Police_(Brazil) || https://en.wikipedia.org/wiki/Favela
+2007-06-28,Thursday,False,,,0,0,0,neutral,,
+2007-06-29,Friday,False,,,1,1,0,good,"Apple Inc. releases its first mobile phone, the iPhone.",https://en.wikipedia.org/wiki/Apple_Inc.
+2007-06-30,Saturday,False,,,0,0,0,neutral,,
+2007-07-01,Sunday,False,,,1,0,0,neutral,Smoking in England is banned in all public indoor spaces.,https://en.wikipedia.org/wiki/Smoking_bans_in_the_United_Kingdom
+2007-07-02,Monday,False,,,0,0,0,neutral,,
+2007-07-03,Tuesday,False,,,0,0,0,neutral,,
+2007-07-04,Wednesday,False,,,0,0,0,neutral,,
+2007-07-05,Thursday,False,,,0,0,0,neutral,,
+2007-07-06,Friday,False,,,0,0,0,neutral,,
+2007-07-07,Saturday,False,,,1,1,0,good,The first Live Earth benefit concert was held in 11 locations around the world.,https://en.wikipedia.org/wiki/Live_Earth_(2007_concert)
+2007-07-08,Sunday,False,,,0,0,0,neutral,,
+2007-07-09,Monday,False,,,0,0,0,neutral,,
+2007-07-10,Tuesday,False,,,1,1,0,good,Erden Eruç begins the first solo human-powered circumnavigation of the world.,https://en.wikipedia.org/wiki/Erden_Eru%C3%A7
+2007-07-11,Wednesday,False,,,2,0,2,bad,"U.S. Army Apache helicopters engage in airstrikes against armed insurgents in Baghdad, Iraq, where civilians are killed; footage from the cockpit is later leaked to the Internet. || Two U.S. Army AH-64 Apache helicopters (pictured) conducted a series of air-to-ground attacks in Baghdad.",https://en.wikipedia.org/wiki/United_States_Army || https://en.wikipedia.org/wiki/Boeing_AH-64_Apache
+2007-07-12,Thursday,False,,,0,0,0,neutral,,
+2007-07-13,Friday,False,,,0,0,0,neutral,,
+2007-07-14,Saturday,False,,,0,0,0,neutral,,
+2007-07-15,Sunday,False,,,0,0,0,neutral,,
+2007-07-16,Monday,False,,,2,0,2,bad,"An earthquake of magnitude 6.8 and 6.6 aftershock occurs off the Niigata coast of Japan killing eight people, injuring at least 800 and damaging a nuclear power plant. || An earthquake of magnitude .mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}Mw6.6 struck Niigata Prefecture, Japan, causing a leak of radioactive gases from the Kashiwazaki-Kariwa Nuclear Power Plant.",https://en.wikipedia.org/wiki/2007_Ch%C5%ABetsu_offshore_earthquake || https://en.wikipedia.org/wiki/2007_Ch%C5%ABetsu_offshore_earthquake
+2007-07-17,Tuesday,False,,,2,0,1,bad,"TAM Airlines Flight 3054, an Airbus A320, crashes into a warehouse after landing too fast and missing the end of the São Paulo–Congonhas Airport runway, killing 199 people. || TAM Airlines Flight 3054 overran the runway at Congonhas Airport in São Paulo, Brazil, killing 199 people.",https://en.wikipedia.org/wiki/TAM_Airlines_Flight_3054 || https://en.wikipedia.org/wiki/TAM_Airlines_Flight_3054
+2007-07-18,Wednesday,False,,,0,0,0,neutral,,
+2007-07-19,Thursday,False,,,0,0,0,neutral,,
+2007-07-20,Friday,False,,,0,0,0,neutral,,
+2007-07-21,Saturday,False,,,1,1,0,good,"Harry Potter and the Deathly Hallows, the final book in the popular Harry Potter series by J. K. Rowling, was released and sold 15 million copies in its first 24 hours, making it the fastest-selling book in history.",https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows
+2007-07-22,Sunday,False,,,0,0,0,neutral,,
+2007-07-23,Monday,False,,,0,0,0,neutral,,
+2007-07-24,Tuesday,False,,,0,0,0,neutral,,
+2007-07-25,Wednesday,False,,,2,2,0,good,Pratibha Patil is sworn in as India's first female president. || Pratibha Patil was sworn in as the first female president of India.,https://en.wikipedia.org/wiki/Pratibha_Patil || https://en.wikipedia.org/wiki/Pratibha_Patil
+2007-07-26,Thursday,False,,,1,0,0,neutral,"After widespread controversy throughout Wales, Shambo, a black Friesian bull that had been adopted by the local Hindu community, was slaughtered due to concerns about bovine tuberculosis.",https://en.wikipedia.org/wiki/Shambo
+2007-07-27,Friday,False,,,1,0,0,neutral,"While covering a police pursuit in Phoenix, Arizona, two news helicopters collided in mid-air, killing both crews.",https://en.wikipedia.org/wiki/Car_chase
+2007-07-28,Saturday,False,,,0,0,0,neutral,,
+2007-07-29,Sunday,False,,,0,0,0,neutral,,
+2007-07-30,Monday,False,,,1,0,1,bad,"A Jeep Cherokee filled with propane canisters drives into the entrance of Glasgow Airport, Scotland in a failed terrorist attack. This was linked to the 2007 London car bombs that had taken place the day before.",https://en.wikipedia.org/wiki/Jeep_Cherokee
+2007-07-31,Tuesday,False,,,0,0,0,neutral,,
+2007-08-01,Wednesday,False,,,1,1,0,good,"At AT&T Park, Barry Bonds hits his 756th career home run to surpass Hank Aaron's 33-year-old record.",https://en.wikipedia.org/wiki/Oracle_Park
+2007-08-02,Thursday,False,,,0,0,0,neutral,,
+2007-08-03,Friday,False,,,0,0,0,neutral,,
+2007-08-04,Saturday,False,,,1,0,1,bad,Former deputy director of the Chilean secret police Raúl Iturriaga is captured after having been on the run following a conviction for kidnapping.,https://en.wikipedia.org/wiki/Direcci%C3%B3n_de_Inteligencia_Nacional
+2007-08-05,Sunday,False,,,0,0,0,neutral,,
+2007-08-06,Monday,False,,,2,2,0,good,"NASA's Phoenix Mars lander is launched. || An airport police officer discovered a suitcase containing approximately US$800,000 as it passed through security at Jorge Newbery Airfield in Buenos Aires, sparking an international scandal involving Venezuela and Argentina.",https://en.wikipedia.org/wiki/NASA || https://en.wikipedia.org/wiki/Mar%C3%ADa_del_Luj%C3%A1n_Telpuk
+2007-08-07,Tuesday,False,,,1,0,1,bad,"Raúl Iturriaga, a former deputy director of the Chilean secret police, was captured in Viña del Mar after having been on the run following a kidnapping conviction.",https://en.wikipedia.org/wiki/Ra%C3%BAl_Iturriaga
+2007-08-08,Wednesday,False,,,2,1,0,good,"An EF2 tornado touches down in Kings County and Richmond County, New York, the most powerful tornado in New York to date and the first in Brooklyn since 1889. || Space Shuttle program: STS-118 Mission: Endeavor takes off on a mission to the International Space Station.",https://en.wikipedia.org/wiki/2007_Brooklyn_tornado || https://en.wikipedia.org/wiki/STS-118
+2007-08-09,Thursday,False,,,2,1,0,good,"Operation Banner, the presence of the British Army in Northern Ireland, and the longest-running British Army operation ever, comes to an end. || The Troubles: Operation Banner, the British Armed Forces' operation in Northern Ireland, ended after 38 years with a military stalemate and ceasefire.",https://en.wikipedia.org/wiki/Operation_Banner || https://en.wikipedia.org/wiki/The_Troubles
+2007-08-10,Friday,False,,,1,0,0,neutral,"Amid large protests against the impending demolition of the Queen's Pier, the High Court of Hong Kong dismissed legal attempts to preserve the landmark.",https://en.wikipedia.org/wiki/Queen's_Pier
+2007-08-11,Saturday,False,,,0,0,0,neutral,,
+2007-08-12,Sunday,False,,,0,0,0,neutral,,
+2007-08-13,Monday,False,,,0,0,0,neutral,,
+2007-08-14,Tuesday,False,,,0,0,0,neutral,,
+2007-08-15,Wednesday,True,Independence Day,general,1,0,1,bad,"An 8.0-magnitude earthquake off the Pacific coast devastates Ica and various regions of Peru killing 514 and injuring 1,090.",https://en.wikipedia.org/wiki/2007_Peru_earthquake
+2007-08-16,Thursday,False,,,0,0,0,neutral,,
+2007-08-17,Friday,False,,,1,0,1,bad,"Air Moorea Flight 1121 crashes after takeoff from Moorea Airport in French Polynesia, killing all 20 people on board.",https://en.wikipedia.org/wiki/Air_Moorea_Flight_1121
+2007-08-18,Saturday,False,,,0,0,0,neutral,,
+2007-08-19,Sunday,False,,,2,0,2,bad,"The Kahtaniya bombings kill at least 500 people. || Four coordinated suicide bomb attacks detonated in the Yazidi communities of Qahtaniya and Jazeera, Iraq, killing 796 people and wounding 1,562 others.",https://en.wikipedia.org/wiki/Qahtaniyah_bombings || https://en.wikipedia.org/wiki/Qahtaniyah_bombings
+2007-08-20,Monday,False,,,1,0,0,neutral,"China Airlines Flight 120 catches fire and explodes after landing at Naha Airport in Okinawa, Japan.",https://en.wikipedia.org/wiki/China_Airlines_Flight_120
+2007-08-21,Tuesday,False,,,1,1,0,good,"BioShock was released in North America, becoming a critical success and a demonstration of video games as an art form.",https://en.wikipedia.org/wiki/BioShock
+2007-08-22,Wednesday,False,,,1,0,1,bad,"The Texas Rangers defeat the Baltimore Orioles 30–3, the most runs scored by a team in modern Major League Baseball history.",https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)
+2007-08-23,Thursday,False,,,0,0,0,neutral,,
+2007-08-24,Friday,False,,,2,0,2,bad,"The I-35W Mississippi River bridge spanning the Mississippi River in Minneapolis, Minnesota, collapses during the evening rush hour, killing 13 people and injuring 145. || Bridge 9340, carrying Interstate 35W across the Mississippi River in Minneapolis, United States, suffered a catastrophic failure and collapsed (aftermath pictured), killing 13 people and injuring 145 others.",https://en.wikipedia.org/wiki/I-35W_Mississippi_River_bridge || https://en.wikipedia.org/wiki/I-35W_Mississippi_River_bridge
+2007-08-25,Saturday,False,,,1,1,0,good,"The skeletal remains of Russia's last royal family members Alexei Nikolaevich, Tsarevich of Russia, and his sister Grand Duchess Anastasia are discovered near Yekaterinburg, Russia.",https://en.wikipedia.org/wiki/Alexei_Nikolaevich%2C_Tsarevich_of_Russia
+2007-08-26,Sunday,False,,,0,0,0,neutral,,
+2007-08-27,Monday,False,,,0,0,0,neutral,,
+2007-08-28,Tuesday,False,,,0,0,0,neutral,,
+2007-08-29,Wednesday,False,,,1,0,1,bad,A heavy bomber that had been unintentionally loaded with nuclear missiles flew them from North Dakota to Louisiana before they were recognized.,https://en.wikipedia.org/wiki/Heavy_bomber
+2007-08-30,Thursday,False,,,1,0,1,bad,Six nuclear warheads were mistakenly loaded onto a United States Air Force heavy bomber that flew from Minot Air Force Base in North Dakota to Barksdale Air Force Base in Louisiana.,https://en.wikipedia.org/wiki/2007_United_States_Air_Force_nuclear_weapons_incident
+2007-08-31,Friday,False,,,0,0,0,neutral,,
+2007-09-01,Saturday,False,,,0,0,0,neutral,,
+2007-09-02,Sunday,False,,,0,0,0,neutral,,
+2007-09-03,Monday,False,,,0,0,0,neutral,,
+2007-09-04,Tuesday,True,Janmashtami,hindu,0,0,0,neutral,,
+2007-09-05,Wednesday,False,,,1,0,0,neutral,Israel executes the air strike Operation Orchard to destroy a nuclear reactor in Syria.,https://en.wikipedia.org/wiki/Israel
+2007-09-06,Thursday,False,,,2,0,2,bad,Three terrorists suspected to be a part of Al-Qaeda are arrested in Germany after allegedly planning attacks on both the Frankfurt International airport and US military installations. || Three terrorists suspected to be part of al-Qaeda were arrested in Germany after planning attacks on Frankfurt Airport and Ramstein Air Base.,https://en.wikipedia.org/wiki/Al-Qaeda || https://en.wikipedia.org/wiki/Al-Qaeda
+2007-09-07,Friday,False,,,0,0,0,neutral,,
+2007-09-08,Saturday,False,,,0,0,0,neutral,,
+2007-09-09,Sunday,False,,,0,0,0,neutral,,
+2007-09-10,Monday,False,,,1,0,0,neutral,"Former Prime Minister of Pakistan Nawaz Sharif returns to Pakistan after seven years in exile, following a military coup in October 1999.",https://en.wikipedia.org/wiki/Nawaz_Sharif
+2007-09-11,Tuesday,False,,,1,0,1,bad,"Russia tests the largest conventional weapon ever, the Father of All Bombs.",https://en.wikipedia.org/wiki/Conventional_weapon
+2007-09-12,Wednesday,False,,,2,0,1,bad,"Former Philippine President Joseph Estrada is convicted of plunder. || Two earthquakes measuring 8.4 and 7.9 on the Richter Scale hits the Indonesian island of Sumatra, killing 25 people and injuring 161.",https://en.wikipedia.org/wiki/Joseph_Estrada || https://en.wikipedia.org/wiki/2007_Bengkulu_earthquakes
+2007-09-13,Thursday,False,,,2,0,0,neutral,"The Declaration on the Rights of Indigenous Peoples is adopted by the United Nations General Assembly. || The McLaren F1 team are found guilty of possessing confidential information from the Ferrari team, fined $100 million, and excluded from the constructors' championship standings.",https://en.wikipedia.org/wiki/Declaration_on_the_Rights_of_Indigenous_Peoples || https://en.wikipedia.org/wiki/McLaren
+2007-09-14,Friday,False,,,2,2,0,good,"Prelude to the 2008 financial crisis: Northern Rock bank experiences the first bank run in the United Kingdom in 150 years. || Late-2000s financial crisis: The Northern Rock bank received a liquidity support facility from the Bank of England, sparking a bank run—the United Kingdom's first in 150 years.",https://en.wikipedia.org/wiki/2008_financial_crisis || https://en.wikipedia.org/wiki/2008_financial_crisis
+2007-09-15,Saturday,False,,,0,0,0,neutral,,
+2007-09-16,Sunday,False,,,3,0,2,bad,"One-Two-Go Airlines Flight 269 carrying 130 crew and passengers crashes in Thailand, killing 90 people. || Security guards working for Blackwater Worldwide shoot and kill 17 Iraqis in Nisour Square, Baghdad. || Seventeen Iraqi civilians were shot and killed by Academi guards in Baghdad.",https://en.wikipedia.org/wiki/One-Two-Go_Airlines_Flight_269 || https://en.wikipedia.org/wiki/Nisour_Square_massacre || https://en.wikipedia.org/wiki/Nisour_Square_massacre
+2007-09-17,Monday,False,,,0,0,0,neutral,,
+2007-09-18,Tuesday,False,,,0,0,0,neutral,,
+2007-09-19,Wednesday,False,,,1,0,0,neutral,"Between 30,000 and 100,000 people take part in anti-government protests in Yangon, Burma, the largest in 20 years.",https://en.wikipedia.org/wiki/Saffron_Revolution
+2007-09-20,Thursday,False,,,0,0,0,neutral,,
+2007-09-21,Friday,False,,,0,0,0,neutral,,
+2007-09-22,Saturday,False,,,1,0,0,neutral,"Buddhist monks join anti-government protesters in Myanmar, starting what some call the Saffron Revolution.",https://en.wikipedia.org/wiki/Saffron_Revolution
+2007-09-23,Sunday,False,,,0,0,0,neutral,,
+2007-09-24,Monday,False,,,0,0,0,neutral,,
+2007-09-25,Tuesday,False,,,0,0,0,neutral,,
+2007-09-26,Wednesday,False,,,0,0,0,neutral,,
+2007-09-27,Thursday,False,,,1,1,0,good,NASA launches the Dawn probe to the asteroid belt.,https://en.wikipedia.org/wiki/Dawn_(spacecraft)
+2007-09-28,Friday,False,,,0,0,0,neutral,,
+2007-09-29,Saturday,False,,,1,0,1,bad,"Calder Hall, the world's first commercial nuclear power station, is demolished in a controlled explosion.",https://en.wikipedia.org/wiki/Calder_Hall_nuclear_power_station
+2007-09-30,Sunday,False,,,0,0,0,neutral,,
+2007-10-01,Monday,False,,,0,0,0,neutral,,
+2007-10-02,Tuesday,True,Gandhi Jayanti,general,1,0,0,neutral,President Roh Moo-hyun of South Korea goes to North Korea for an Inter-Korean summit with North Korean leader Kim Jong-il.,https://en.wikipedia.org/wiki/Roh_Moo-hyun
+2007-10-03,Wednesday,False,,,0,0,0,neutral,,
+2007-10-04,Thursday,False,,,0,0,0,neutral,,
+2007-10-05,Friday,False,,,0,0,0,neutral,,
+2007-10-06,Saturday,False,,,1,1,0,good,Jason Lewis completes the first human-powered circumnavigation of the Earth.,https://en.wikipedia.org/wiki/Jason_Lewis_(adventurer)
+2007-10-07,Sunday,False,,,0,0,0,neutral,,
+2007-10-08,Monday,False,,,0,0,0,neutral,,
+2007-10-09,Tuesday,False,,,1,0,0,neutral,"The Dow Jones Industrial Average reaches its all-time high of 14,164 points before rapidly declining due to the 2008 financial crisis.",https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average
+2007-10-10,Wednesday,False,,,0,0,0,neutral,,
+2007-10-11,Thursday,False,,,0,0,0,neutral,,
+2007-10-12,Friday,False,,,0,0,0,neutral,,
+2007-10-13,Saturday,True,Id-ul-Fitr,general,1,1,0,good,Sheikh Muszaphar Shukor becomes the first Malaysian in space on board Soyuz TMA-11.,https://en.wikipedia.org/wiki/Sheikh_Muszaphar_Shukor
+2007-10-14,Sunday,False,,,0,0,0,neutral,,
+2007-10-15,Monday,False,,,2,0,2,bad,"Seventeen activists in New Zealand are arrested in the country's first post-9/11 anti-terrorism raids. || New Zealand Police conducted several anti-terrorism raids in relation to the discovery of an alleged paramilitary training camp in the Urewera mountain ranges, arresting 17 people and seizing four guns and 230 rounds of ammunition.",https://en.wikipedia.org/wiki/2007_New_Zealand_police_raids || https://en.wikipedia.org/wiki/New_Zealand_Police
+2007-10-16,Tuesday,False,,,0,0,0,neutral,,
+2007-10-17,Wednesday,False,,,0,0,0,neutral,,
+2007-10-18,Thursday,False,,,1,0,1,bad,Karachi bombing: A suicide attack on a motorcade carrying former Pakistani Prime Minister Benazir Bhutto kills 139 and wounds 450 more. Bhutto herself is uninjured.,https://en.wikipedia.org/wiki/2007_Karsaz_bombing
+2007-10-19,Friday,False,,,0,0,0,neutral,,
+2007-10-20,Saturday,False,,,0,0,0,neutral,,
+2007-10-21,Sunday,True,Dussehra,hindu,0,0,0,neutral,,
+2007-10-22,Monday,False,,,1,0,1,bad,"A raid on Anuradhapura Air Force Base is carried out by 21 Tamil Tiger commandos, with all except one dying in this attack. Eight Sri Lanka Air Force planes are destroyed and ten damaged.",https://en.wikipedia.org/wiki/Raid_on_Anuradhapura_Air_Force_Base
+2007-10-23,Tuesday,False,,,2,2,0,good,"A storm causes the Mexican Kab 101 oil platform to collide with a wellhead, leading to the death and drowning of 22 people during rescue operations after evacuation of the platform. || Space Shuttle Discovery is launched on STS-120, with Pamela Melroy becoming the second female space shuttle commander.",https://en.wikipedia.org/wiki/Kab_101 || https://en.wikipedia.org/wiki/Space_Shuttle_Discovery
+2007-10-24,Wednesday,False,,,1,1,0,good,"Chang'e 1, the first satellite in the Chinese Lunar Exploration Program, is launched from Xichang Satellite Launch Center.",https://en.wikipedia.org/wiki/Chang'e_1
+2007-10-25,Thursday,False,,,0,0,0,neutral,,
+2007-10-26,Friday,False,,,0,0,0,neutral,,
+2007-10-27,Saturday,False,,,0,0,0,neutral,,
+2007-10-28,Sunday,False,,,0,0,0,neutral,,
+2007-10-29,Monday,False,,,1,0,0,neutral,Somali pirates hijacked a North Korean ship in the Indian Ocean northeast of Mogadishu.,https://en.wikipedia.org/wiki/Dai_Hong_Dan_incident
+2007-10-30,Tuesday,False,,,1,0,0,neutral,"Between 15,000 and 20,000 protesters march on Jena, Louisiana, United States, in support of six black youths who had been convicted of assaulting a white classmate.",https://en.wikipedia.org/wiki/Jena_Six
+2007-10-31,Wednesday,False,,,0,0,0,neutral,,
+2007-11-01,Thursday,False,,,0,0,0,neutral,,
+2007-11-02,Friday,False,,,0,0,0,neutral,,
+2007-11-03,Saturday,False,,,0,0,0,neutral,,
+2007-11-04,Sunday,False,,,0,0,0,neutral,,
+2007-11-05,Monday,False,,,2,1,0,good,"China's first lunar satellite, Chang'e 1, goes into orbit around the Moon. || The Android mobile operating system is unveiled by Google.",https://en.wikipedia.org/wiki/Chang'e_1 || https://en.wikipedia.org/wiki/Android_(operating_system)
+2007-11-06,Tuesday,False,,,0,0,0,neutral,,
+2007-11-07,Wednesday,False,,,2,2,0,good,"Cristina Fernández de Kirchner becomes the first directly elected female President of Argentina. || In the Argentine general election, Cristina Fernández de Kirchner became the first woman to be elected president of Argentina.",https://en.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner || https://en.wikipedia.org/wiki/2007_Argentine_general_election
+2007-11-08,Thursday,False,,,0,0,0,neutral,,
+2007-11-09,Friday,True,Diwali,hindu,0,0,0,neutral,,
+2007-11-10,Saturday,False,,,0,0,0,neutral,,
+2007-11-11,Sunday,False,,,0,0,0,neutral,,
+2007-11-12,Monday,False,,,1,0,0,neutral,"Cyclone Sidr hits Bangladesh, killing an estimated 5,000 people and destroying parts of the world's largest mangrove forest, the Sundarbans.",https://en.wikipedia.org/wiki/Cyclone_Sidr
+2007-11-13,Tuesday,False,,,0,0,0,neutral,,
+2007-11-14,Wednesday,False,,,0,0,0,neutral,,
+2007-11-15,Thursday,False,,,0,0,0,neutral,,
+2007-11-16,Friday,False,,,0,0,0,neutral,,
+2007-11-17,Saturday,False,,,1,0,1,bad,"The Jokela school shooting in Jokela, Tuusula, Finland, takes place, resulting in the death of nine people.",https://en.wikipedia.org/wiki/Jokela_school_shooting
+2007-11-18,Sunday,False,,,0,0,0,neutral,,
+2007-11-19,Monday,False,,,0,0,0,neutral,,
+2007-11-20,Tuesday,False,,,0,0,0,neutral,,
+2007-11-21,Wednesday,False,,,0,0,0,neutral,,
+2007-11-22,Thursday,False,,,0,0,0,neutral,,
+2007-11-23,Friday,False,,,2,1,0,good,"MS Explorer, a cruise liner carrying 154 people, sinks in the Antarctic Ocean south of Argentina after hitting an iceberg near the South Shetland Islands. There are no fatalities. || MS Explorer became the first cruise ship to sink in the Southern Ocean.",https://en.wikipedia.org/wiki/MV_Explorer_(1969) || https://en.wikipedia.org/wiki/MV_Explorer_(1969)
+2007-11-24,Saturday,True,Guru Nanak Jayanti,sikh,0,0,0,neutral,,
+2007-11-25,Sunday,False,,,0,0,0,neutral,,
+2007-11-26,Monday,False,,,0,0,0,neutral,,
+2007-11-27,Tuesday,False,,,0,0,0,neutral,,
+2007-11-28,Wednesday,False,,,0,0,0,neutral,,
+2007-11-29,Thursday,False,,,2,0,0,neutral,"The Armed Forces of the Philippines lay siege to the Peninsula Manila after soldiers led by Senator Antonio Trillanes stage a mutiny. || During their trial for the 2003 Oakwood mutiny, Philippine soldiers led by Senator Antonio Trillanes mutinied and seized a conference room at The Peninsula Manila in Makati.",https://en.wikipedia.org/wiki/Armed_Forces_of_the_Philippines || https://en.wikipedia.org/wiki/Oakwood_mutiny
+2007-11-30,Friday,False,,,1,0,1,bad,"Atlasjet Flight 4203 crashes in Keçiborlu while on approach to Isparta Süleyman Demirel Airport, killing 57.",https://en.wikipedia.org/wiki/Atlasjet_Flight_4203
+2007-12-01,Saturday,False,,,0,0,0,neutral,,
+2007-12-02,Sunday,False,,,0,0,0,neutral,,
+2007-12-03,Monday,False,,,0,0,0,neutral,,
+2007-12-04,Tuesday,False,,,1,0,0,neutral,"At the Ibero-American Summit in Santiago, Chile, King Juan Carlos I of Spain asked Venezuelan president Hugo Chávez ""Why don't you shut up?"" after Chávez repeatedly interrupted a speech by Spanish prime minister José Luis Rodríguez Zapatero.",https://en.wikipedia.org/wiki/Ibero-American_Summit
+2007-12-05,Wednesday,False,,,2,0,2,bad,"Westroads Mall shooting: Nineteen-year-old Robert A. Hawkins kills nine people, including himself, with a WASR-10 at a Von Maur department store in Omaha, Nebraska. || A gunman killed nine people at a shopping mall in Omaha, Nebraska.",https://en.wikipedia.org/wiki/Westroads_Mall_shooting || https://en.wikipedia.org/wiki/Westroads_Mall_shooting
+2007-12-06,Thursday,False,,,0,0,0,neutral,,
+2007-12-07,Friday,False,,,0,0,0,neutral,,
+2007-12-08,Saturday,False,,,0,0,0,neutral,,
+2007-12-09,Sunday,False,,,0,0,0,neutral,,
+2007-12-10,Monday,False,,,1,0,1,bad,"Winter storms cause the Chehalis River to flood many cities in Lewis County, Washington, and close a 32-kilometre (20 mi) portion of Interstate 5 for several days. At least eight deaths and billions of dollars in damages are blamed on the floods.",https://en.wikipedia.org/wiki/Great_Coastal_Gale_of_2007
+2007-12-11,Tuesday,False,,,0,0,0,neutral,,
+2007-12-12,Wednesday,False,,,0,0,0,neutral,,
+2007-12-13,Thursday,False,,,1,0,1,bad,"Insurgency in the Maghreb: Two car bombs explode in Algiers, Algeria, one near the Supreme Constitutional Court and the other near the offices of the United Nations.",https://en.wikipedia.org/wiki/Insurgency_in_the_Maghreb_(2002%E2%80%93present)
+2007-12-14,Friday,False,,,0,0,0,neutral,,
+2007-12-15,Saturday,False,,,0,0,0,neutral,,
+2007-12-16,Sunday,False,,,1,1,0,good,The Treaty of Lisbon is signed by the EU member states to amend both the Treaty of Rome and the Maastricht Treaty which together form the constitutional basis of the EU. The Treaty of Lisbon is effective from 1 December 2009.,https://en.wikipedia.org/wiki/Treaty_of_Lisbon
+2007-12-17,Monday,False,,,0,0,0,neutral,,
+2007-12-18,Tuesday,False,,,0,0,0,neutral,,
+2007-12-19,Wednesday,False,,,0,0,0,neutral,,
+2007-12-20,Thursday,True,Bakrid,muslim,3,2,0,good,"Elizabeth II becomes the oldest monarch in the history of the United Kingdom, surpassing Queen Victoria, who lived for 81 years and 243 days. || The Portrait of Suzanne Bloch (1904), by the Spanish artist Pablo Picasso, and O Lavrador de Café by Brazilian modernist painter Cândido Portinari, are stolen from the São Paulo Museum of Art in Brazil. Both will be recovered a few weeks later. || Pablo Picasso's Portrait of Suzanne Bloch was stolen from the São Paulo Museum of Art before being recovered about three weeks later.",https://en.wikipedia.org/wiki/Elizabeth_II || https://en.wikipedia.org/wiki/Portrait_of_Suzanne_Bloch || https://en.wikipedia.org/wiki/Pablo_Picasso
+2007-12-21,Friday,False,,,0,0,0,neutral,,
+2007-12-22,Saturday,False,,,0,0,0,neutral,,
+2007-12-23,Sunday,False,,,1,1,0,good,An agreement is made for the Kingdom of Nepal to be abolished and the country to become a federal republic with the Prime Minister becoming head of state.,https://en.wikipedia.org/wiki/Kingdom_of_Nepal
+2007-12-24,Monday,False,,,0,0,0,neutral,,
+2007-12-25,Tuesday,True,Christmas,christian,2,0,2,bad,"A Siberian tiger named Tatania escapes her exhibit at the San Francisco Zoo and attacks three people, killing one and injuring two more. || A tiger at the San Francisco Zoo escaped from its enclosure and attacked three patrons before it was shot and killed.",https://en.wikipedia.org/wiki/Siberian_tiger || https://en.wikipedia.org/wiki/San_Francisco_Zoo
+2007-12-26,Wednesday,False,,,0,0,0,neutral,,
+2007-12-27,Thursday,False,,,4,0,4,bad,"Former Pakistani prime minister Benazir Bhutto is assassinated in a shooting incident. || Riots erupt in Mombasa, Kenya, after Mwai Kibaki is declared the winner of the presidential election, triggering a political, economic, and humanitarian crisis. || Riots erupted in Mombasa, Kenya, after Mwai Kibaki was declared the winner of the presidential election—the first event in a political, economic, and humanitarian crisis. || Former prime minister Benazir Bhutto was assassinated while leaving a Pakistan People's Party political rally at Liaqat National Bagh in Rawalpindi.",https://en.wikipedia.org/wiki/Prime_minister || https://en.wikipedia.org/wiki/Mombasa || https://en.wikipedia.org/wiki/Mombasa || https://en.wikipedia.org/wiki/Benazir_Bhutto
+2007-12-28,Friday,False,,,0,0,0,neutral,,
+2007-12-29,Saturday,False,,,0,0,0,neutral,,
+2007-12-30,Sunday,False,,,0,0,0,neutral,,
+2007-12-31,Monday,False,,,0,0,0,neutral,,
+2008-01-01,Tuesday,False,,,0,0,0,neutral,,
+2008-01-02,Wednesday,False,,,0,0,0,neutral,,
+2008-01-03,Thursday,False,,,0,0,0,neutral,,
+2008-01-04,Friday,False,,,0,0,0,neutral,,
+2008-01-05,Saturday,False,,,1,1,0,good,"Mikheil Saakashvili was decisively re-elected as President of Georgia in ""the first genuinely competitive presidential election"" in the history of the country.",https://en.wikipedia.org/wiki/Mikheil_Saakashvili
+2008-01-06,Sunday,False,,,0,0,0,neutral,,
+2008-01-07,Monday,False,,,0,0,0,neutral,,
+2008-01-08,Tuesday,False,,,0,0,0,neutral,,
+2008-01-09,Wednesday,False,,,0,0,0,neutral,,
+2008-01-10,Thursday,False,,,1,0,0,neutral,The Euphronios Krater is unveiled in Rome after being returned to Italy by the Metropolitan Museum of Art.,https://en.wikipedia.org/wiki/Euphronios_Krater
+2008-01-11,Friday,False,,,0,0,0,neutral,,
+2008-01-12,Saturday,False,,,0,0,0,neutral,,
+2008-01-13,Sunday,False,,,0,0,0,neutral,,
+2008-01-14,Monday,False,,,1,0,1,bad,"A Let L-410 Turbolet crashes in the Los Roques Archipelago in Venezuela, killing 14 people.",https://en.wikipedia.org/wiki/Let_L-410_Turbolet
+2008-01-15,Tuesday,False,,,0,0,0,neutral,,
+2008-01-16,Wednesday,False,,,0,0,0,neutral,,
+2008-01-17,Thursday,False,,,1,0,1,bad,"British Airways Flight 38 crashes short of the runway at Heathrow Airport, injuring 47.",https://en.wikipedia.org/wiki/British_Airways_Flight_38
+2008-01-18,Friday,False,,,0,0,0,neutral,,
+2008-01-19,Saturday,True,Muharram,muslim,0,0,0,neutral,,
+2008-01-20,Sunday,False,,,0,0,0,neutral,,
+2008-01-21,Monday,False,,,0,0,0,neutral,,
+2008-01-22,Tuesday,False,,,0,0,0,neutral,,
+2008-01-23,Wednesday,False,,,0,0,0,neutral,,
+2008-01-24,Thursday,False,,,0,0,0,neutral,,
+2008-01-25,Friday,False,,,0,0,0,neutral,,
+2008-01-26,Saturday,True,Republic Day,general,0,0,0,neutral,,
+2008-01-27,Sunday,False,,,0,0,0,neutral,,
+2008-01-28,Monday,False,,,0,0,0,neutral,,
+2008-01-29,Tuesday,False,,,1,0,0,neutral,"An Egyptian court rules that people who do not adhere to one of the three government-recognised religions, while not allowed to list any belief outside of those three, are still eligible to receive government identity documents.",https://en.wikipedia.org/wiki/Religion_in_Egypt
+2008-01-30,Wednesday,False,,,1,0,0,neutral,"The Trump International Hotel and Tower in downtown Chicago opened for business, eleven months before construction would finish.",https://en.wikipedia.org/wiki/Trump_International_Hotel_and_Tower_(Chicago)
+2008-01-31,Thursday,False,,,0,0,0,neutral,,
+2008-02-01,Friday,False,,,2,0,0,neutral,"Civic mobilizations in Colombia against FARC, under the name A million voices against the FARC. || The London low emission zone, governing what types of vehicles may enter Greater London, came into operation.",https://en.wikipedia.org/wiki/Colombia || https://en.wikipedia.org/wiki/London_low_emission_zone
+2008-02-02,Saturday,False,,,0,0,0,neutral,,
+2008-02-03,Sunday,False,,,0,0,0,neutral,,
+2008-02-04,Monday,False,,,0,0,0,neutral,,
+2008-02-05,Tuesday,False,,,2,0,2,bad,"A major tornado outbreak across the Southern United States kills 57. || Eighty-seven tornadoes occurred over the course of the Super Tuesday tornado outbreak across multiple U.S. states, causing 56 deaths and over $1 billion in damage.",https://en.wikipedia.org/wiki/2008_Super_Tuesday_tornado_outbreak || https://en.wikipedia.org/wiki/Tornado
+2008-02-06,Wednesday,False,,,0,0,0,neutral,,
+2008-02-07,Thursday,False,,,0,0,0,neutral,,
+2008-02-08,Friday,False,,,0,0,0,neutral,,
+2008-02-09,Saturday,False,,,0,0,0,neutral,,
+2008-02-10,Sunday,False,,,2,0,1,bad,"Rebel East Timorese soldiers seriously wound President José Ramos-Horta. Rebel leader Alfredo Reinado is killed in the attack. || Rebel East Timorese soldiers invaded the homes of President José Ramos-Horta and Prime Minister Xanana Gusmão, seriously wounding the former.",https://en.wikipedia.org/wiki/Timor-Leste || https://en.wikipedia.org/wiki/2008_East_Timorese_assassination_attempts
+2008-02-11,Monday,False,,,1,1,0,good,"The Namdaemun gate in Seoul, the first of South Korea's National Treasures, was severely damaged by arson.",https://en.wikipedia.org/wiki/Namdaemun
+2008-02-12,Tuesday,False,,,0,0,0,neutral,,
+2008-02-13,Wednesday,False,,,1,0,0,neutral,Australian Prime Minister Kevin Rudd makes a historic apology to the Indigenous Australians and the Stolen Generations.,https://en.wikipedia.org/wiki/Kevin_Rudd
+2008-02-14,Thursday,False,,,2,0,1,bad,"Northern Illinois University shooting: A gunman opens fire in a lecture hall of Northern Illinois University in DeKalb County, Illinois, resulting in six fatalities (including the gunman) and 21 injuries. || A gunman opened fire into a crowded lecture hall at Northern Illinois University in DeKalb, killing five people and injuring twenty-one others.",https://en.wikipedia.org/wiki/2008_Northern_Illinois_University_shooting || https://en.wikipedia.org/wiki/2008_Northern_Illinois_University_shooting
+2008-02-15,Friday,False,,,0,0,0,neutral,,
+2008-02-16,Saturday,False,,,0,0,0,neutral,,
+2008-02-17,Sunday,False,,,1,1,0,good,Kosovo declares independence from Serbia.,https://en.wikipedia.org/wiki/Kosovo
+2008-02-18,Monday,False,,,0,0,0,neutral,,
+2008-02-19,Tuesday,False,,,0,0,0,neutral,,
+2008-02-20,Wednesday,False,,,0,0,0,neutral,,
+2008-02-21,Thursday,False,,,0,0,0,neutral,,
+2008-02-22,Friday,False,,,0,0,0,neutral,,
+2008-02-23,Saturday,False,,,2,0,2,bad,"A United States Air Force B-2 Spirit bomber crashes on Guam, marking  the first operational loss of a B-2. || A B-2 Spirit stealth bomber crashed on the runway shortly after takeoff from Andersen Air Force Base in Guam in the most expensive crash in U.S. Air Force history.",https://en.wikipedia.org/wiki/United_States_Air_Force || https://en.wikipedia.org/wiki/Northrop_B-2_Spirit
+2008-02-24,Sunday,False,,,1,0,0,neutral,Fidel Castro retires as the President of Cuba and the Council of Ministers after 32 years. He remained as head of the Communist Party for another three years.,https://en.wikipedia.org/wiki/Fidel_Castro
+2008-02-25,Monday,False,,,0,0,0,neutral,,
+2008-02-26,Tuesday,False,,,1,0,1,bad,A suicide bomber kills 68 people (including first responders) in Baghdad on the same day that a gunman kills eight students in Jerusalem.,https://en.wikipedia.org/wiki/6_March_2008_Baghdad_bombing
+2008-02-27,Wednesday,False,,,1,0,1,bad,"Jemaah Islamiyah terrorist Mas Selamat Kastari escapes from a detention center in Singapore, hiding in Johor, Malaysia until he was recaptured over a year later.",https://en.wikipedia.org/wiki/Jemaah_Islamiyah
+2008-02-28,Thursday,False,,,0,0,0,neutral,,
+2008-02-29,Friday,False,,,3,0,0,neutral,"The United Kingdom's Ministry of Defence withdraws Prince Harry from a tour of Afghanistan after news of his deployment is leaked to foreign media. || Misha Defonseca admits to fabricating her memoir, Misha: A Mémoire of the Holocaust Years, in which she claims to have lived with a pack of wolves in the woods during the Holocaust. || Belgian author Misha Defonseca admitted that her bestselling memoir about surviving the Holocaust was in fact a literary forgery.",https://en.wikipedia.org/wiki/Ministry_of_Defence_(United_Kingdom) || https://en.wikipedia.org/wiki/Misha_Defonseca || https://en.wikipedia.org/wiki/Misha_Defonseca
+2008-03-01,Saturday,False,,,0,0,0,neutral,,
+2008-03-02,Sunday,False,,,1,0,0,neutral,"The New York Times revealed that Eliot Spitzer (pictured), Governor of New York, had patronized a prostitution ring.",https://en.wikipedia.org/wiki/The_New_York_Times
+2008-03-03,Monday,False,,,0,0,0,neutral,,
+2008-03-04,Tuesday,False,,,0,0,0,neutral,,
+2008-03-05,Wednesday,False,,,0,0,0,neutral,,
+2008-03-06,Thursday,True,Maha Shivaratri,general,0,0,0,neutral,,
+2008-03-07,Friday,False,,,0,0,0,neutral,,
+2008-03-08,Saturday,False,,,0,0,0,neutral,,
+2008-03-09,Sunday,False,,,1,0,1,bad,"The Armenian police clash with peaceful opposition rally protesting against allegedly fraudulent presidential elections, as a result ten people are killed.",https://en.wikipedia.org/wiki/Police_of_Armenia
+2008-03-10,Monday,False,,,2,1,1,bad,"The New York Philharmonic performs in Pyongyang, North Korea; this is the first event of its kind to take place in North Korea. || In the first significant cultural visit from the United States to North Korea since the Korean War, the New York Philharmonic Orchestra performed in Pyongyang.",https://en.wikipedia.org/wiki/New_York_Philharmonic || https://en.wikipedia.org/wiki/Korean_War
+2008-03-11,Tuesday,False,,,1,1,0,good,"Space Shuttle Endeavour launches on STS-123, carrying the first component of the Japanese Kibō module to the International Space Station.",https://en.wikipedia.org/wiki/Space_Shuttle_Endeavour
+2008-03-12,Wednesday,False,,,0,0,0,neutral,,
+2008-03-13,Thursday,False,,,0,0,0,neutral,,
+2008-03-14,Friday,False,,,1,0,1,bad,"A series of riots, protests, and demonstrations erupt in Lhasa and subsequently spread elsewhere in Tibet.",https://en.wikipedia.org/wiki/2008_Tibetan_unrest
+2008-03-15,Saturday,False,,,1,0,0,neutral,"Stockpiles of obsolete ammunition explode at an ex-military ammunition depot in the village of Gërdec, Albania, killing 26 people.",https://en.wikipedia.org/wiki/2008_G%C3%ABrdec_explosions
+2008-03-16,Sunday,False,,,0,0,0,neutral,,
+2008-03-17,Monday,False,,,0,0,0,neutral,,
+2008-03-18,Tuesday,False,,,0,0,0,neutral,,
+2008-03-19,Wednesday,False,,,2,0,0,neutral,"GRB 080319B: A cosmic burst that is the farthest object visible to the naked eye is briefly observed. || The gamma-ray burst GRB 080319B (artist's impression pictured), the farthest object from Earth that was observable by the naked eye, was observed.",https://en.wikipedia.org/wiki/GRB_080319B || https://en.wikipedia.org/wiki/Gamma-ray_burst
+2008-03-20,Thursday,False,,,0,0,0,neutral,,
+2008-03-21,Friday,True,Good Friday; Milad-un-Nabi,muslim,0,0,0,neutral,,
+2008-03-22,Saturday,False,,,0,0,0,neutral,,
+2008-03-23,Sunday,False,,,1,1,0,good,"Official opening of Rajiv Gandhi International Airport in Hyderabad, India",https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport
+2008-03-24,Monday,False,,,2,2,0,good,"Bhutan officially becomes a democracy, with its first ever general election. || Led by Jigme Thinley, the Bhutan Peace and Prosperity Party won 45 of 47 seats in the country's first National Assembly election.",https://en.wikipedia.org/wiki/Bhutan || https://en.wikipedia.org/wiki/Jigme_Thinley
+2008-03-25,Tuesday,False,,,0,0,0,neutral,,
+2008-03-26,Wednesday,False,,,0,0,0,neutral,,
+2008-03-27,Thursday,False,,,0,0,0,neutral,,
+2008-03-28,Friday,False,,,0,0,0,neutral,,
+2008-03-29,Saturday,False,,,0,0,0,neutral,,
+2008-03-30,Sunday,False,,,1,0,0,neutral,Drolma Kyi arrested by Chinese authorities.,https://en.wikipedia.org/wiki/Drolma_Kyi
+2008-03-31,Monday,False,,,0,0,0,neutral,,
+2008-04-01,Tuesday,False,,,0,0,0,neutral,,
+2008-04-02,Wednesday,False,,,1,0,0,neutral,The 2008 Egyptian general strike starts led by Egyptian workers later to be adopted by April 6 Youth Movement and Egyptian activists.,https://en.wikipedia.org/wiki/2008_Egyptian_general_strike
+2008-04-03,Thursday,False,,,0,0,0,neutral,,
+2008-04-04,Friday,False,,,0,0,0,neutral,,
+2008-04-05,Saturday,False,,,0,0,0,neutral,,
+2008-04-06,Sunday,False,,,2,0,0,neutral,"ATA Airlines, once one of the ten largest U.S. passenger airlines and largest charter airline, files for bankruptcy for the second time in five years and ceases all operations. || Texas law enforcement cordons off the FLDS's YFZ Ranch. Eventually 533 women and children will be taken into state custody.",https://en.wikipedia.org/wiki/ATA_Airlines || https://en.wikipedia.org/wiki/Texas
+2008-04-07,Monday,False,,,0,0,0,neutral,,
+2008-04-08,Tuesday,False,,,0,0,0,neutral,,
+2008-04-09,Wednesday,False,,,0,0,0,neutral,,
+2008-04-10,Thursday,False,,,0,0,0,neutral,,
+2008-04-11,Friday,False,,,1,0,1,bad,"Kata Air Transport Flight 007 crashes while attempting an emergency landing at Chișinău International Airport, killing eight.",https://en.wikipedia.org/wiki/Kata_Air_Transport_Flight_007
+2008-04-12,Saturday,False,,,0,0,0,neutral,,
+2008-04-13,Sunday,False,,,0,0,0,neutral,,
+2008-04-14,Monday,False,,,0,0,0,neutral,,
+2008-04-15,Tuesday,False,,,0,0,0,neutral,,
+2008-04-16,Wednesday,False,,,1,0,0,neutral,The U.S. Supreme Court rules in the Baze v. Rees decision that execution by lethal injection does not violate the Eighth Amendment ban against cruel and unusual punishment.,https://en.wikipedia.org/wiki/Supreme_Court_of_the_United_States
+2008-04-17,Thursday,False,,,0,0,0,neutral,,
+2008-04-18,Friday,True,Mahavir Jayanti,general,0,0,0,neutral,,
+2008-04-19,Saturday,False,,,0,0,0,neutral,,
+2008-04-20,Sunday,False,,,3,3,0,good,"Danica Patrick wins the Indy Japan 300 becoming the first female driver in history to win an Indy car race. || American racing driver Danica Patrick won the Indy Japan 300, becoming the first woman to win an IndyCar auto race. || Fernando Lugo became the first candidate not from the Colorado Party candidate to be elected President of Paraguay in 61 years.",https://en.wikipedia.org/wiki/Danica_Patrick || https://en.wikipedia.org/wiki/Danica_Patrick || https://en.wikipedia.org/wiki/Fernando_Lugo
+2008-04-21,Monday,False,,,0,0,0,neutral,,
+2008-04-22,Tuesday,False,,,0,0,0,neutral,,
+2008-04-23,Wednesday,False,,,0,0,0,neutral,,
+2008-04-24,Thursday,False,,,0,0,0,neutral,,
+2008-04-25,Friday,False,,,0,0,0,neutral,,
+2008-04-26,Saturday,False,,,0,0,0,neutral,,
+2008-04-27,Sunday,False,,,0,0,0,neutral,,
+2008-04-28,Monday,False,,,1,1,0,good,"The 1,388-foot-tall (423.2 m) Trump International Hotel and Tower in Chicago, with the world's highest residence above ground level at the time, held its grand opening.",https://en.wikipedia.org/wiki/Trump_International_Hotel_and_Tower_(Chicago)
+2008-04-29,Tuesday,False,,,0,0,0,neutral,,
+2008-04-30,Wednesday,False,,,1,0,0,neutral,"Two skeletal remains found near Yekaterinburg are confirmed by Russian scientists to be the remains of Alexei and Anastasia, two of the children of the last Tsar of Russia, whose entire family was executed at Yekaterinburg by the Bolsheviks.",https://en.wikipedia.org/wiki/Yekaterinburg
+2008-05-01,Thursday,False,,,0,0,0,neutral,,
+2008-05-02,Friday,False,,,3,1,0,good,"Cyclone Nargis makes landfall in Burma killing over 138,000 people and leaving millions of people homeless. || Chaitén Volcano begins erupting in Chile, forcing the evacuation of more than 4,500 people. || The Chaitén volcano in Chile began to erupt for the first time since around 1640.",https://en.wikipedia.org/wiki/Cyclone_Nargis || https://en.wikipedia.org/wiki/Chait%C3%A9n_(volcano) || https://en.wikipedia.org/wiki/Chait%C3%A9n_(volcano)
+2008-05-03,Saturday,False,,,0,0,0,neutral,,
+2008-05-04,Sunday,False,,,0,0,0,neutral,,
+2008-05-05,Monday,False,,,1,0,1,bad,"British barrister Mark Saunders was shot dead by police after a five-hour siege at his home in Chelsea, London.",https://en.wikipedia.org/wiki/Barrister
+2008-05-06,Tuesday,False,,,0,0,0,neutral,,
+2008-05-07,Wednesday,False,,,0,0,0,neutral,,
+2008-05-08,Thursday,False,,,0,0,0,neutral,,
+2008-05-09,Friday,False,,,0,0,0,neutral,,
+2008-05-10,Saturday,False,,,0,0,0,neutral,,
+2008-05-11,Sunday,False,,,0,0,0,neutral,,
+2008-05-12,Monday,False,,,3,0,1,bad,"An earthquake (measuring around 8.0 magnitude) occurs in Sichuan, China, killing over 69,000 people. || U.S. Immigration and Customs Enforcement conducts the largest-ever raid of a workplace in Postville, Iowa, arresting nearly 400 immigrants for identity theft and document fraud. || In Postville, Iowa, U.S. Immigration and Customs Enforcement conducted the largest-ever raid of a workplace and arrested nearly 400 immigrants for identity theft and document fraud.",https://en.wikipedia.org/wiki/2008_Sichuan_earthquake || https://en.wikipedia.org/wiki/United_States_Immigration_and_Customs_Enforcement || https://en.wikipedia.org/wiki/Postville%2C_Iowa
+2008-05-13,Tuesday,False,,,1,0,1,bad,"Nine bombs placed by the Indian Mujahideen, then an unknown terrorist group, exploded in a 15-minute period in Jaipur, India, killing 80 people and injuring more than 200 others.",https://en.wikipedia.org/wiki/Indian_Mujahideen
+2008-05-14,Wednesday,False,,,2,0,1,bad,"Battle of Piccadilly Gardens in Manchester city centre between Zenit supporters and Rangers supporters and the Greater Manchester Police, 39 policemen injured, one police-dog injured and 39 arrested. || On the day of the UEFA Cup Final, violence erupted between football hooligan supporters of both teams and the Greater Manchester Police, resulting in 39 arrests and 39 injured officers.",https://en.wikipedia.org/wiki/2008_UEFA_Cup_final_riots || https://en.wikipedia.org/wiki/2008_UEFA_Cup_final
+2008-05-15,Thursday,False,,,1,0,0,neutral,California becomes the second U.S. state after Massachusetts in 2004 to legalize same-sex marriage after the state's own Supreme Court rules a previous ban unconstitutional.,https://en.wikipedia.org/wiki/Same-sex_marriage_in_California
+2008-05-16,Friday,False,,,0,0,0,neutral,,
+2008-05-17,Saturday,False,,,0,0,0,neutral,,
+2008-05-18,Sunday,False,,,0,0,0,neutral,,
+2008-05-19,Monday,False,,,0,0,0,neutral,,
+2008-05-20,Tuesday,True,Buddha Purnima,general,0,0,0,neutral,,
+2008-05-21,Wednesday,False,,,0,0,0,neutral,,
+2008-05-22,Thursday,False,,,0,0,0,neutral,,
+2008-05-23,Friday,False,,,2,0,2,bad,"The International Court of Justice (ICJ) awards Middle Rocks to Malaysia and Pedra Branca (Pulau Batu Puteh) to Singapore, ending a 29-year territorial dispute between the two countries. || The International Court of Justice awarded the Middle Rocks to Malaysia and Pedra Branca to Singapore, resolving a 29-year-old territorial dispute in the Singapore Strait.",https://en.wikipedia.org/wiki/International_Court_of_Justice || https://en.wikipedia.org/wiki/International_Court_of_Justice
+2008-05-24,Saturday,False,,,0,0,0,neutral,,
+2008-05-25,Sunday,False,,,1,0,0,neutral,NASA's Phoenix lander touches down in the Green Valley region of Mars to search for environments suitable for water and microbial life.,https://en.wikipedia.org/wiki/NASA
+2008-05-26,Monday,False,,,1,0,1,bad,Severe flooding begins in eastern and southern China that will ultimately cause 148 deaths and force the evacuation of 1.3 million.,https://en.wikipedia.org/wiki/2008_South_China_floods
+2008-05-27,Tuesday,False,,,0,0,0,neutral,,
+2008-05-28,Wednesday,False,,,1,1,0,good,"The first meeting of the Constituent Assembly of Nepal formally declares Nepal a republic, ending the 240-year reign of the Shah dynasty.",https://en.wikipedia.org/wiki/Nepal
+2008-05-29,Thursday,False,,,1,0,1,bad,"A doublet earthquake, of combined magnitude 6.1, strikes Iceland near the town of Selfoss, injuring 30 people.",https://en.wikipedia.org/wiki/2008_Iceland_earthquake
+2008-05-30,Friday,False,,,3,0,2,bad,"Convention on Cluster Munitions is adopted. || TACA Flight 390 overshoots the runway at Toncontín International Airport in Tegucigalpa, Honduras and crashes, killing five people. || The Convention on Cluster Munitions, prohibiting the use, transfer, and stockpiling of cluster bombs, was adopted.",https://en.wikipedia.org/wiki/Convention_on_Cluster_Munitions || https://en.wikipedia.org/wiki/TACA_Flight_390 || https://en.wikipedia.org/wiki/Convention_on_Cluster_Munitions
+2008-05-31,Saturday,False,,,2,2,0,good,"Usain Bolt breaks the world record in the 100m sprint, with a wind-legal (+1.7 m/s) 9.72 seconds. || Space Shuttle Discovery launches on STS-124 carrying the second portion of the Japanese Kibō module to the International Space Station.",https://en.wikipedia.org/wiki/Usain_Bolt || https://en.wikipedia.org/wiki/Space_Shuttle_Discovery
+2008-06-01,Sunday,False,,,1,0,0,neutral,"A fire on the back lot of Universal Studios breaks out, destroying the attraction King Kong Encounter and a large archive of master tapes for music and film, the full extent of which was not revealed until 2019.",https://en.wikipedia.org/wiki/2008_Universal_Studios_fire
+2008-06-02,Monday,False,,,0,0,0,neutral,,
+2008-06-03,Tuesday,False,,,0,0,0,neutral,,
+2008-06-04,Wednesday,False,,,0,0,0,neutral,,
+2008-06-05,Thursday,False,,,0,0,0,neutral,,
+2008-06-06,Friday,False,,,0,0,0,neutral,,
+2008-06-07,Saturday,False,,,0,0,0,neutral,,
+2008-06-08,Sunday,False,,,0,0,0,neutral,,
+2008-06-09,Monday,False,,,1,0,1,bad,"Two bombs explode at a train station near Algiers, Algeria, killing at least 13 people.",https://en.wikipedia.org/wiki/2008_Beni_Amrane_bombings
+2008-06-10,Tuesday,False,,,3,0,3,bad,"Sudan Airways Flight 109 crashes at Khartoum International Airport, killing 30 people. || War in Afghanistan: A U.S. airstrike resulted in the reported deaths of eleven paramilitary members of the Pakistani Frontier Corps and eight Taliban fighters in Pakistan's tribal areas. || Sudan Airways Flight 109 crashed on landing at Khartoum International Airport, killing 30 of the 214 occupants on board.",https://en.wikipedia.org/wiki/Sudan_Airways_Flight_109 || https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001%E2%80%932021) || https://en.wikipedia.org/wiki/Sudan_Airways_Flight_109
+2008-06-11,Wednesday,False,,,0,0,0,neutral,,
+2008-06-12,Thursday,False,,,1,0,0,neutral,"A Japanese man drove a truck into a crowd of pedestrians in Akihabara, Tokyo, and proceeded to stab at least 12 people, killing 7 and wounding 10, before being apprehended.",https://en.wikipedia.org/wiki/2008_Akihabara_massacre
+2008-06-13,Friday,False,,,0,0,0,neutral,,
+2008-06-14,Saturday,False,,,0,0,0,neutral,,
+2008-06-15,Sunday,False,,,3,3,0,good,Canadian Prime Minister Stephen Harper makes a historic official apology to Canada's First Nations in regard to abuses at a Canadian Indian residential school. || The Fermi Gamma-ray Space Telescope is launched into orbit. || Canadian prime minister Stephen Harper apologised to the First Nations for past governments' policies of forced assimilation.,https://en.wikipedia.org/wiki/Prime_Minister_of_Canada || https://en.wikipedia.org/wiki/Fermi_Gamma-ray_Space_Telescope || https://en.wikipedia.org/wiki/Stephen_Harper
+2008-06-16,Monday,False,,,0,0,0,neutral,,
+2008-06-17,Tuesday,False,,,0,0,0,neutral,,
+2008-06-18,Wednesday,False,,,0,0,0,neutral,,
+2008-06-19,Thursday,False,,,0,0,0,neutral,,
+2008-06-20,Friday,False,,,0,0,0,neutral,,
+2008-06-21,Saturday,False,,,0,0,0,neutral,,
+2008-06-22,Sunday,False,,,0,0,0,neutral,,
+2008-06-23,Monday,False,,,0,0,0,neutral,,
+2008-06-24,Tuesday,False,,,0,0,0,neutral,,
+2008-06-25,Wednesday,False,,,0,0,0,neutral,,
+2008-06-26,Thursday,False,,,1,0,1,bad,"A suicide bomber dressed as an Iraqi policeman detonates an explosive vest, killing 25 people.",https://en.wikipedia.org/wiki/2008_Karmah_bombing
+2008-06-27,Friday,False,,,2,0,2,bad,"In a highly scrutinized election, President of Zimbabwe Robert Mugabe is re-elected in a landslide after his opponent Morgan Tsvangirai had withdrawn a week earlier, citing violence against his party's supporters. || Robert Mugabe was re-elected as President of Zimbabwe with an overwhelming majority after his opponent Morgan Tsvangirai withdrew, citing violence against his party's supporters.",https://en.wikipedia.org/wiki/2008_Zimbabwean_general_election || https://en.wikipedia.org/wiki/Robert_Mugabe
+2008-06-28,Saturday,False,,,0,0,0,neutral,,
+2008-06-29,Sunday,False,,,0,0,0,neutral,,
+2008-06-30,Monday,False,,,0,0,0,neutral,,
+2008-07-01,Tuesday,False,,,2,0,2,bad,"Riots erupt in Mongolia in response to allegations of fraud surrounding the 2008 legislative elections. || Rioting erupted in Ulaanbaatar, Mongolia, over allegations of fraud surrounding the recent legislative election.",https://en.wikipedia.org/wiki/2008_riot_in_Mongolia || https://en.wikipedia.org/wiki/2008_riot_in_Mongolia
+2008-07-02,Wednesday,False,,,1,0,1,bad,"Israeli–Palestinian conflict: An Arab man rammed a loader into traffic in Jerusalem, killing three people and injuring 40 others (damage pictured).",https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict
+2008-07-03,Thursday,False,,,0,0,0,neutral,,
+2008-07-04,Friday,False,,,1,0,1,bad,"A bomb explodes at a concert in Minsk's Independence Square, injuring 50 people.",https://en.wikipedia.org/wiki/2008_Minsk_bombing
+2008-07-05,Saturday,False,,,0,0,0,neutral,,
+2008-07-06,Sunday,False,,,0,0,0,neutral,,
+2008-07-07,Monday,False,,,0,0,0,neutral,,
+2008-07-08,Tuesday,False,,,0,0,0,neutral,,
+2008-07-09,Wednesday,False,,,1,0,1,bad,"Under the belief that Israel and the United States were planning to attack its nuclear program, Iran conducted the Great Prophet III missile test and war games exercise.",https://en.wikipedia.org/wiki/Nuclear_program_of_Iran
+2008-07-10,Thursday,False,,,1,0,1,bad,Former Macedonian Interior Minister Ljube Boškoski is acquitted of all war-crimes charges by a United Nations tribunal.,https://en.wikipedia.org/wiki/Ljube_Bo%C5%A1koski
+2008-07-11,Friday,False,,,0,0,0,neutral,,
+2008-07-12,Saturday,False,,,1,0,1,bad,"Battle of Wanat begins when Taliban and al-Qaeda guerrillas attack US Army and Afghan National Army troops in Afghanistan. The U.S. deaths were, at that time, the most in a single battle since the beginning of operations in 2001.",https://en.wikipedia.org/wiki/Battle_of_Wanat
+2008-07-13,Sunday,False,,,0,0,0,neutral,,
+2008-07-14,Monday,False,,,0,0,0,neutral,,
+2008-07-15,Tuesday,False,,,0,0,0,neutral,,
+2008-07-16,Wednesday,False,,,1,0,0,neutral,"A tainted milk powder scandal broke in China which ultimately involved an estimated 300,000 victims, the vast majority infants, with 54,000 hospitalized with kidney problems and six deaths.",https://en.wikipedia.org/wiki/2008_Chinese_milk_scandal
+2008-07-17,Thursday,False,,,0,0,0,neutral,,
+2008-07-18,Friday,False,,,0,0,0,neutral,,
+2008-07-19,Saturday,False,,,0,0,0,neutral,,
+2008-07-20,Sunday,False,,,0,0,0,neutral,,
+2008-07-21,Monday,False,,,1,1,0,good,Ram Baran Yadav is declared the first President of Nepal.,https://en.wikipedia.org/wiki/Ram_Baran_Yadav
+2008-07-22,Tuesday,False,,,0,0,0,neutral,,
+2008-07-23,Wednesday,False,,,0,0,0,neutral,,
+2008-07-24,Thursday,False,,,0,0,0,neutral,,
+2008-07-25,Friday,False,,,0,0,0,neutral,,
+2008-07-26,Saturday,False,,,1,0,1,bad,"Fifty-six people are killed and over 200 people are injured, in the Ahmedabad bombings in India.",https://en.wikipedia.org/wiki/2008_Ahmedabad_bombings
+2008-07-27,Sunday,False,,,0,0,0,neutral,,
+2008-07-28,Monday,False,,,0,0,0,neutral,,
+2008-07-29,Tuesday,False,,,0,0,0,neutral,,
+2008-07-30,Wednesday,False,,,0,0,0,neutral,,
+2008-07-31,Thursday,False,,,0,0,0,neutral,,
+2008-08-01,Friday,False,,,1,0,1,bad,The start of the Russo-Georgian War over the territory of South Ossetia.,https://en.wikipedia.org/wiki/Russo-Georgian_War
+2008-08-02,Saturday,False,,,0,0,0,neutral,,
+2008-08-03,Sunday,False,,,2,0,0,neutral,"A military junta led by Mohamed Ould Abdel Aziz stages a coup d'état in Mauritania, overthrowing president Sidi Ould Cheikh Abdallahi. || Mauritanian president Sidi Ould Cheikh Abdallahi was ousted from power by a group of high-ranking generals that he had dismissed from office several hours earlier.",https://en.wikipedia.org/wiki/Mohamed_Ould_Abdel_Aziz || https://en.wikipedia.org/wiki/Sidi_Ould_Cheikh_Abdallahi
+2008-08-04,Monday,False,,,0,0,0,neutral,,
+2008-08-05,Tuesday,False,,,1,0,0,neutral,The New England Revolution win the 2008 North American SuperLiga final against the Houston Dynamo.,https://en.wikipedia.org/wiki/New_England_Revolution
+2008-08-06,Wednesday,False,,,0,0,0,neutral,,
+2008-08-07,Thursday,False,,,0,0,0,neutral,,
+2008-08-08,Friday,False,,,3,0,0,neutral,"A EuroCity express train en route from Kraków, Poland to Prague, Czech Republic strikes a part of a motorway bridge that had fallen onto the railroad track near Studénka railway station in the Czech Republic and derails, killing eight people and injuring 64 others. || The 29th modern summer Olympic Games took place in Beijing, China until August 24. || A EuroCity train en route to Prague struck a part of a motorway bridge that had fallen onto the track near Studénka station and derailed, killing 8 people and injuring 64 others.",https://en.wikipedia.org/wiki/EuroCity || https://en.wikipedia.org/wiki/2008_Summer_Olympics || https://en.wikipedia.org/wiki/EuroCity
+2008-08-09,Saturday,False,,,1,0,1,bad,"East Coast Jets Flight 81 crashes near Owatonna Degner Regional Airport in Owatonna, Minnesota, killing all eight people on board.",https://en.wikipedia.org/wiki/East_Coast_Jets_Flight_81
+2008-08-10,Sunday,False,,,0,0,0,neutral,,
+2008-08-11,Monday,False,,,0,0,0,neutral,,
+2008-08-12,Tuesday,False,,,0,0,0,neutral,,
+2008-08-13,Wednesday,False,,,1,0,1,bad,Russo-Georgian War: Russian units occupy the Georgian city of Gori.,https://en.wikipedia.org/wiki/Russo-Georgian_War
+2008-08-14,Thursday,False,,,0,0,0,neutral,,
+2008-08-15,Friday,True,Independence Day,general,0,0,0,neutral,,
+2008-08-16,Saturday,False,,,1,0,0,neutral,"The Trump International Hotel and Tower in Chicago is topped off at 1,389 feet (423 m), at the time becoming the world's highest residence above ground-level.",https://en.wikipedia.org/wiki/Trump_International_Hotel_and_Tower_(Chicago)
+2008-08-17,Sunday,False,,,0,0,0,neutral,,
+2008-08-18,Monday,False,,,3,0,1,bad,"The President of Pakistan, Pervez Musharraf, resigns under threat of impeachment. || War of Afghanistan: The Uzbin Valley ambush occurs. || Pakistani president Pervez Musharraf resigned under pressure from a movement to impeach him.",https://en.wikipedia.org/wiki/Pervez_Musharraf || https://en.wikipedia.org/wiki/Uzbin_Valley_ambush || https://en.wikipedia.org/wiki/Pervez_Musharraf
+2008-08-19,Tuesday,False,,,0,0,0,neutral,,
+2008-08-20,Wednesday,False,,,2,0,2,bad,"Spanair Flight 5022, from Madrid, Spain to Gran Canaria, skids off the runway and crashes at Barajas Airport. Of the 172 people on board, 146 die immediately, and eight more later die of injuries sustained in the crash. || Spanair Flight 5022 crashed just after take-off from Madrid's Barajas Airport, killing 154 people.",https://en.wikipedia.org/wiki/Spanair_Flight_5022 || https://en.wikipedia.org/wiki/Spanair_Flight_5022
+2008-08-21,Thursday,False,,,0,0,0,neutral,,
+2008-08-22,Friday,False,,,0,0,0,neutral,,
+2008-08-23,Saturday,False,,,0,0,0,neutral,,
+2008-08-24,Sunday,True,Janmashtami,hindu,2,0,1,bad,"The Beijing–Tianjin Intercity Railway begins operation as the fastest commuter rail system in the world. || Eleven mountaineers from international expeditions died on K2, the second-highest mountain on Earth, in the worst single accident in the history of K2 mountaineering.",https://en.wikipedia.org/wiki/Beijing%E2%80%93Tianjin_intercity_railway || https://en.wikipedia.org/wiki/2008_K2_disaster
+2008-08-25,Monday,False,,,0,0,0,neutral,,
+2008-08-26,Tuesday,False,,,1,0,1,bad,"After a ceasefire was reached in the Russo-Georgian War, Russia recognized the independence of Abkhazia and South Ossetia.",https://en.wikipedia.org/wiki/Russo-Georgian_War
+2008-08-27,Wednesday,False,,,0,0,0,neutral,,
+2008-08-28,Thursday,False,,,0,0,0,neutral,,
+2008-08-29,Friday,False,,,1,0,1,bad,"A Conviasa Boeing 737 crashes into Illiniza Volcano in Ecuador, killing all three people on board.",https://en.wikipedia.org/wiki/Conviasa
+2008-08-30,Saturday,False,,,0,0,0,neutral,,
+2008-08-31,Sunday,False,,,2,2,0,good,"American swimmer Michael Phelps becomes the first person to win eight gold medals at one Olympic Games. || Michael Phelps won his eighth gold medal of the Summer Olympics in Beijing, setting the record for the most gold medals won by an athlete at a single games.",https://en.wikipedia.org/wiki/Michael_Phelps || https://en.wikipedia.org/wiki/Michael_Phelps
+2008-09-01,Monday,False,,,0,0,0,neutral,,
+2008-09-02,Tuesday,False,,,1,1,0,good,Google launches its Google Chrome web browser.,https://en.wikipedia.org/wiki/Google
+2008-09-03,Wednesday,False,,,2,0,2,bad,"Sixty-five passengers are killed when Iran Aseman Airlines Flight 6895 crashes during an emergency landing at Manas International Airport in Bishkek, Kyrgyzstan. || A Cessna 208 Caravan crashes in Cabañas, Zacapa, Guatemala, killing 11 people.",https://en.wikipedia.org/wiki/Iran_Aseman_Airlines_Flight_6895 || https://en.wikipedia.org/wiki/Cessna_208_Caravan
+2008-09-04,Thursday,False,,,0,0,0,neutral,,
+2008-09-05,Friday,False,,,0,0,0,neutral,,
+2008-09-06,Saturday,False,,,0,0,0,neutral,,
+2008-09-07,Sunday,False,,,0,0,0,neutral,,
+2008-09-08,Monday,False,,,0,0,0,neutral,,
+2008-09-09,Tuesday,False,,,0,0,0,neutral,,
+2008-09-10,Wednesday,False,,,1,0,0,neutral,"The Large Hadron Collider at CERN, described as the biggest scientific experiment in history, is powered up in Geneva, Switzerland.",https://en.wikipedia.org/wiki/Large_Hadron_Collider
+2008-09-11,Thursday,False,,,1,0,0,neutral,"A major Channel Tunnel fire breaks out on a freight train, resulting in the closure of part of the tunnel for six months.",https://en.wikipedia.org/wiki/2008_Channel_Tunnel_fire
+2008-09-12,Friday,False,,,2,0,0,neutral,"The 2008 Chatsworth train collision in Los Angeles between a Metrolink commuter train and a Union Pacific freight train kills 25 people. || A Metrolink train collided head-on with a freight train in Los Angeles, California, resulting in 25 deaths and 135 injuries; the Metrolink driver had passed through a red signal, having likely been distracted by text messaging.",https://en.wikipedia.org/wiki/2008_Chatsworth_train_collision || https://en.wikipedia.org/wiki/Metrolink_(California)
+2008-09-13,Saturday,False,,,2,0,2,bad,"Delhi, India, is hit by a series of bomb blasts, resulting in 30 deaths and 130 injuries. || Five bomb blasts took place in Delhi, India, killing at least 20 people as part of a series of attacks perpetrated by the Indian Mujahideen.",https://en.wikipedia.org/wiki/Delhi || https://en.wikipedia.org/wiki/13_September_2008_Delhi_bombings
+2008-09-14,Sunday,False,,,1,0,1,bad,"Aeroflot Flight 821, a Boeing 737-500, crashes into a section of the Trans-Siberian Railway while on approach to Perm International Airport, in Perm, Russia, killing all 88 people on board.",https://en.wikipedia.org/wiki/Aeroflot_Flight_821
+2008-09-15,Monday,False,,,2,0,0,neutral,"Lehman Brothers files for Chapter 11 bankruptcy, the largest bankruptcy filing in U.S. history. || Financial crisis of 2007–2008: The global financial services firm Lehman Brothers filed for bankruptcy while holding over $600 billion in assets, the largest such filing in U.S. history.",https://en.wikipedia.org/wiki/Lehman_Brothers || https://en.wikipedia.org/wiki/2008_financial_crisis
+2008-09-16,Tuesday,False,,,0,0,0,neutral,,
+2008-09-17,Wednesday,False,,,0,0,0,neutral,,
+2008-09-18,Thursday,False,,,1,0,1,bad,Iraq War: The United States Armed Forces transfers control of Anbar Province to the Iraqi Armed Forces.,https://en.wikipedia.org/wiki/Iraq_War
+2008-09-19,Friday,False,,,1,0,0,neutral,Thabo Mbeki resigns as president of South Africa.,https://en.wikipedia.org/wiki/Thabo_Mbeki
+2008-09-20,Saturday,False,,,1,0,0,neutral,Swiss pilot and inventor Yves Rossy (pictured) flew a wingpack powered by jet engines across the English Channel.,https://en.wikipedia.org/wiki/Yves_Rossy
+2008-09-21,Sunday,False,,,0,0,0,neutral,,
+2008-09-22,Monday,False,,,0,0,0,neutral,,
+2008-09-23,Tuesday,False,,,0,0,0,neutral,,
+2008-09-24,Wednesday,False,,,2,0,1,bad,"Matti Saari kills ten people at a school in Finland before committing suicide. || A gunman shot and killed ten students at the Seinäjoki University of Applied Sciences in Kauhajoki, Finland, before committing suicide.",https://en.wikipedia.org/wiki/Kauhajoki_school_shooting || https://en.wikipedia.org/wiki/Kauhajoki_school_shooting
+2008-09-25,Thursday,False,,,0,0,0,neutral,,
+2008-09-26,Friday,False,,,1,0,1,bad,"A Learjet 60 carrying musicians Travis Barker and Adam ""DJ AM"" Goldstein crashes during a rejected takeoff from Colombia Metropolitan Airport in West Columbia, South Carolina, killing four of the six people on board. Barker and Goldstein both survive.",https://en.wikipedia.org/wiki/Learjet_60
+2008-09-27,Saturday,False,,,1,1,0,good,CNSA astronaut Zhai Zhigang becomes the first Chinese person to perform a spacewalk.,https://en.wikipedia.org/wiki/Zhai_Zhigang
+2008-09-28,Sunday,False,,,2,1,1,bad,"Falcon 1 becomes the first privately developed liquid-fuel ground-launched vehicle to put a payload into orbit by the RatSat mission. || The Singapore Grand Prix is held as Formula One's inaugural night race, with Fernando Alonso winning the event. Almost a year later it was revealed that Alonso's team-mate Nelson Piquet Jr. had been ordered to crash his car to help bring out the safety car and give Alonso the advantage and win.",https://en.wikipedia.org/wiki/Falcon_1 || https://en.wikipedia.org/wiki/2008_Singapore_Grand_Prix
+2008-09-29,Monday,False,,,1,0,1,bad,The stock market crashes with the Dow Jones dropping a then record 778 points after the United States House of Representatives vote on the Emergency Economic Stabilization Act fails during the beginning stages of the Great Recession.,https://en.wikipedia.org/wiki/Stock_market_crash
+2008-09-30,Tuesday,False,,,0,0,0,neutral,,
+2008-10-01,Wednesday,False,,,0,0,0,neutral,,
+2008-10-02,Thursday,True,Gandhi Jayanti; Id-ul-Fitr,general,0,0,0,neutral,,
+2008-10-03,Friday,False,,,2,0,0,neutral,"The Emergency Economic Stabilization Act of 2008 for the U.S. financial system is signed by President George W. Bush. || The Emergency Economic Stabilization Act of 2008, establishing the Troubled Asset Relief Program, commonly referred to as a bailout of the U.S. financial system, was enacted.",https://en.wikipedia.org/wiki/Emergency_Economic_Stabilization_Act_of_2008 || https://en.wikipedia.org/wiki/Emergency_Economic_Stabilization_Act_of_2008
+2008-10-04,Saturday,False,,,0,0,0,neutral,,
+2008-10-05,Sunday,False,,,0,0,0,neutral,,
+2008-10-06,Monday,False,,,1,1,0,good,The MESSENGER probe discovered Mercury's Rembrandt (pictured) – the second largest impact crater on the planet.,https://en.wikipedia.org/wiki/MESSENGER
+2008-10-07,Tuesday,False,,,3,2,0,good,"Asteroid 2008 TC3 impacts the Earth over Sudan, the first time an asteroid impact is detected prior to its entry into Earth's atmosphere. || Qantas Flight 72 experiences an in-flight upset near Learmonth, Victoria, Australia, injuring 112. || 2008 TC3 exploded above the Nubian Desert in Sudan, in the first time that an asteroid impact had been predicted prior to atmospheric entry.",https://en.wikipedia.org/wiki/2008_TC3 || https://en.wikipedia.org/wiki/Qantas_Flight_72 || https://en.wikipedia.org/wiki/2008_TC3
+2008-10-08,Wednesday,False,,,0,0,0,neutral,,
+2008-10-09,Thursday,True,Dussehra,hindu,0,0,0,neutral,,
+2008-10-10,Friday,False,,,0,0,0,neutral,,
+2008-10-11,Saturday,False,,,0,0,0,neutral,,
+2008-10-12,Sunday,False,,,0,0,0,neutral,,
+2008-10-13,Monday,False,,,0,0,0,neutral,,
+2008-10-14,Tuesday,False,,,0,0,0,neutral,,
+2008-10-15,Wednesday,False,,,1,0,0,neutral,"The Dow Jones Industrial Average closes down 733.08 points, or 7.87%, the second worst percentage drop in the Dow's history.",https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average
+2008-10-16,Thursday,False,,,0,0,0,neutral,,
+2008-10-17,Friday,False,,,0,0,0,neutral,,
+2008-10-18,Saturday,False,,,0,0,0,neutral,,
+2008-10-19,Sunday,False,,,0,0,0,neutral,,
+2008-10-20,Monday,False,,,0,0,0,neutral,,
+2008-10-21,Tuesday,False,,,0,0,0,neutral,,
+2008-10-22,Wednesday,False,,,1,1,0,good,India launches its first uncrewed lunar probe mission Chandrayaan-1.,https://en.wikipedia.org/wiki/Exploration_of_the_Moon
+2008-10-23,Thursday,False,,,0,0,0,neutral,,
+2008-10-24,Friday,False,,,1,0,0,neutral,"""Bloody Friday"" saw many of the world's stock exchanges experience the worst declines in their history, with drops of around 10% in most indices.",https://en.wikipedia.org/wiki/Stock_market_crash
+2008-10-25,Saturday,False,,,0,0,0,neutral,,
+2008-10-26,Sunday,False,,,0,0,0,neutral,,
+2008-10-27,Monday,False,,,0,0,0,neutral,,
+2008-10-28,Tuesday,True,Diwali,hindu,0,0,0,neutral,,
+2008-10-29,Wednesday,False,,,2,0,1,bad,"Delta Air Lines merges with Northwest Airlines, creating the world's largest airline and reducing the number of US legacy carriers to five. || A pair of deadly earthquakes hits Baluchistan, Pakistan, killing 215.",https://en.wikipedia.org/wiki/Delta_Air_Lines || https://en.wikipedia.org/wiki/2008_Ziarat_earthquakes
+2008-10-30,Thursday,False,,,2,0,2,bad,"A dump truck full of explosives detonates in front of the Marriott hotel in Islamabad, Pakistan, killing 54 people and injuring 266 others. || An explosive-laden truck detonated in front of the Marriott hotel in Islamabad, Pakistan, killing 54 people and injuring 266 others.",https://en.wikipedia.org/wiki/Islamabad_Marriott_Hotel_bombing || https://en.wikipedia.org/wiki/Islamabad_Marriott_Hotel_bombing
+2008-10-31,Friday,False,,,0,0,0,neutral,,
+2008-11-01,Saturday,False,,,0,0,0,neutral,,
+2008-11-02,Sunday,False,,,2,0,0,neutral,"Lewis Hamilton secured his maiden Formula One Drivers' Championship Title by one point ahead of Felipe Massa at the Brazilian Grand Prix, after a pass for fifth place against the Toyota of Timo Glock on the final lap of the race. || Lewis Hamilton (pictured) overtook Timo Glock in the final corners of the Brazilian Grand Prix to win the Formula One championship by one point.",https://en.wikipedia.org/wiki/Lewis_Hamilton || https://en.wikipedia.org/wiki/Lewis_Hamilton
+2008-11-03,Monday,False,,,0,0,0,neutral,,
+2008-11-04,Tuesday,False,,,1,0,0,neutral,"The United States government takes control of the two largest mortgage financing companies in the US, Fannie Mae and Freddie Mac.",https://en.wikipedia.org/wiki/Federal_takeover_of_Fannie_Mae_and_Freddie_Mac
+2008-11-05,Wednesday,False,,,0,0,0,neutral,,
+2008-11-06,Thursday,False,,,0,0,0,neutral,,
+2008-11-07,Friday,False,,,0,0,0,neutral,,
+2008-11-08,Saturday,False,,,0,0,0,neutral,,
+2008-11-09,Sunday,False,,,0,0,0,neutral,,
+2008-11-10,Monday,False,,,0,0,0,neutral,,
+2008-11-11,Tuesday,False,,,2,2,0,good,Barack Obama becomes the first person of biracial or African-American descent to be elected as President of the United States. || Barack Obama (pictured) became the first person of biracial or African-American descent to be elected President of the United States.,https://en.wikipedia.org/wiki/Barack_Obama || https://en.wikipedia.org/wiki/Barack_Obama
+2008-11-12,Wednesday,False,,,0,0,0,neutral,,
+2008-11-13,Thursday,True,Guru Nanak Jayanti,sikh,0,0,0,neutral,,
+2008-11-14,Friday,False,,,0,0,0,neutral,,
+2008-11-15,Saturday,False,,,2,2,0,good,"The first G-20 economic summit opens in Washington, D.C. || Space Shuttle Endeavour launches on STS-126 to continue assembly of the International Space Station.",https://en.wikipedia.org/wiki/2008_G20_Washington_summit || https://en.wikipedia.org/wiki/Space_Shuttle_Endeavour
+2008-11-16,Sunday,False,,,0,0,0,neutral,,
+2008-11-17,Monday,False,,,0,0,0,neutral,,
+2008-11-18,Tuesday,False,,,0,0,0,neutral,,
+2008-11-19,Wednesday,False,,,0,0,0,neutral,,
+2008-11-20,Thursday,False,,,0,0,0,neutral,,
+2008-11-21,Friday,False,,,0,0,0,neutral,,
+2008-11-22,Saturday,False,,,0,0,0,neutral,,
+2008-11-23,Sunday,False,,,0,0,0,neutral,,
+2008-11-24,Monday,False,,,0,0,0,neutral,,
+2008-11-25,Tuesday,False,,,1,0,0,neutral,"Cyclone Nisha strikes northern Sri Lanka, killing 15 people and displacing 90,000 others while dealing the region the highest rainfall in nine decades.",https://en.wikipedia.org/wiki/Cyclone_Nisha_(2008)
+2008-11-26,Wednesday,False,,,3,0,2,bad,"Mumbai attacks, a series of terrorist attacks killing approximately 175 citizens by 10 members of Lashkar-e-Taiba, a Pakistan based extremist Islamist terrorist organisation. || The ocean liner Queen Elizabeth 2, now out of service, docks in Dubai. || A coordinated group of shooting and bombing attacks across Mumbai began, ultimately killing 175 people and wounding more than 300 others.",https://en.wikipedia.org/wiki/2008_Mumbai_attacks || https://en.wikipedia.org/wiki/Queen_Elizabeth_2 || https://en.wikipedia.org/wiki/2008_Mumbai_attacks
+2008-11-27,Thursday,False,,,1,0,1,bad,"XL Airways Germany Flight 888T: An Airbus A320 performing a flight test crashes near the French commune of Canet-en-Roussillon, killing all seven people on board.",https://en.wikipedia.org/wiki/XL_Airways_Germany_Flight_888T
+2008-11-28,Friday,False,,,0,0,0,neutral,,
+2008-11-29,Saturday,False,,,0,0,0,neutral,,
+2008-11-30,Sunday,False,,,0,0,0,neutral,,
+2008-12-01,Monday,False,,,0,0,0,neutral,,
+2008-12-02,Tuesday,False,,,0,0,0,neutral,,
+2008-12-03,Wednesday,False,,,1,0,0,neutral,"After 30 years in power, Maumoon Abdul Gayoom was succeeded by Mohamed Nasheed as president of the Maldives.",https://en.wikipedia.org/wiki/Maumoon_Abdul_Gayoom
+2008-12-04,Thursday,False,,,1,0,0,neutral,"Over five months after landing on Mars, NASA declares the Phoenix mission concluded after communications with the lander were lost.",https://en.wikipedia.org/wiki/Mars
+2008-12-05,Friday,False,,,0,0,0,neutral,,
+2008-12-06,Saturday,False,,,0,0,0,neutral,,
+2008-12-07,Sunday,False,,,0,0,0,neutral,,
+2008-12-08,Monday,False,,,2,0,0,neutral,"Governor of Illinois Rod Blagojevich is arrested by federal officials for crimes including attempting to sell the U.S. Senate seat being vacated by President-elect Barack Obama. || Rod Blagojevich, the governor of Illinois, was arrested on corruption charges, including for attempting to sell the U.S. Senate seat being vacated by president-elect Barack Obama.",https://en.wikipedia.org/wiki/Governor_of_Illinois || https://en.wikipedia.org/wiki/Rod_Blagojevich
+2008-12-09,Tuesday,True,Bakrid,muslim,0,0,0,neutral,,
+2008-12-10,Wednesday,False,,,0,0,0,neutral,,
+2008-12-11,Thursday,False,,,0,0,0,neutral,,
+2008-12-12,Friday,False,,,0,0,0,neutral,,
+2008-12-13,Saturday,False,,,2,0,0,neutral,"Bernie Madoff is arrested and charged with securities fraud in a $50 billion Ponzi scheme. || American stockbroker Bernie Madoff was arrested and charged with securities fraud in a $64.8 billion Ponzi scheme, the largest in history.",https://en.wikipedia.org/wiki/Bernie_Madoff || https://en.wikipedia.org/wiki/Bernie_Madoff
+2008-12-14,Sunday,False,,,1,0,1,bad,"During a press conference in Baghdad, Iraqi journalist Muntadhar al-Zaidi threw his shoes at U.S. president George W. Bush and Iraqi prime minister Nouri al-Maliki, yelling ""This is for the widows and orphans and all those killed in Iraq"".",https://en.wikipedia.org/wiki/Baghdad
+2008-12-15,Monday,False,,,0,0,0,neutral,,
+2008-12-16,Tuesday,False,,,0,0,0,neutral,,
+2008-12-17,Wednesday,False,,,0,0,0,neutral,,
+2008-12-18,Thursday,False,,,0,0,0,neutral,,
+2008-12-19,Friday,False,,,0,0,0,neutral,,
+2008-12-20,Saturday,False,,,0,0,0,neutral,,
+2008-12-21,Sunday,False,,,0,0,0,neutral,,
+2008-12-22,Monday,False,,,2,0,0,neutral,"An ash dike ruptured at a solid waste containment area for a Tennessee Valley Authority coal-fired power plant in Roane County, Tennessee, releasing 4.2 million m3 (1.1 billion US gal) of coal fly ash slurry in the largest industrial spill in U.S. history. || A dike ruptured at a waste containment area for a coal-fired power plant in Kingston, Tennessee, releasing 1.1 billion gallons (4.2 million m3) of coal fly ash slurry (aftermath pictured) in the largest industrial spill in US history.",https://en.wikipedia.org/wiki/Kingston_Fossil_Plant_coal_fly_ash_slurry_spill || https://en.wikipedia.org/wiki/Kingston_Fossil_Plant_coal_fly_ash_slurry_spill
+2008-12-23,Tuesday,False,,,2,0,0,neutral,"A coup d'état occurs in Guinea hours after the death of President Lansana Conté. || The Guinean military engineered a coup d'état, announcing that it planned to rule the country for two years prior to a new presidential election.",https://en.wikipedia.org/wiki/2008_Guinean_coup_d'%C3%A9tat || https://en.wikipedia.org/wiki/Republic_of_Guinea_Armed_Forces
+2008-12-24,Wednesday,False,,,0,0,0,neutral,,
+2008-12-25,Thursday,True,Christmas,christian,0,0,0,neutral,,
+2008-12-26,Friday,False,,,0,0,0,neutral,,
+2008-12-27,Saturday,False,,,2,1,1,bad,"Operation Cast Lead: Israel launches three-week operation on Gaza. || Citing rocket attacks from Palestinian armed groups, Israel launched a surprise attack against the Gaza Strip, opening the three-week Gaza War.",https://en.wikipedia.org/wiki/Gaza_War_(2008%E2%80%932009) || https://en.wikipedia.org/wiki/Qassam_rocket
+2008-12-28,Sunday,False,,,0,0,0,neutral,,
+2008-12-29,Monday,False,,,0,0,0,neutral,,
+2008-12-30,Tuesday,False,,,0,0,0,neutral,,
+2008-12-31,Wednesday,False,,,0,0,0,neutral,,

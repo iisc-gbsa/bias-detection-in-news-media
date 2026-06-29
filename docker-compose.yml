@@ -79,7 +79,7 @@ services:
     networks:
       - bias-detection-network
 
-  # MongoDB Express (optional - for MongoDB GUI)
+  # # MongoDB Express (optional - for MongoDB GUI)
   mongo-express:
     image: mongo-express:1.0.2
     hostname: mongo-express

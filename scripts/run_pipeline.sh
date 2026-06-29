@@ -45,12 +45,12 @@ start_infrastructure() {
         log_warn "Kafka might not be ready yet"
     fi
     
-    # Check MongoDB
-    if docker exec mongodb mongosh --eval "db.adminCommand('ping')" > /dev/null 2>&1; then
-        log_info "MongoDB is ready"
-    else
-        log_warn "MongoDB might not be ready yet"
-    fi
+    # # Check MongoDB
+    # if docker exec mongodb mongosh --eval "db.adminCommand('ping')" > /dev/null 2>&1; then
+    #     log_info "MongoDB is ready"
+    # else
+    #     log_warn "MongoDB might not be ready yet"
+    # fi
 }
 
 # Setup Kafka topics

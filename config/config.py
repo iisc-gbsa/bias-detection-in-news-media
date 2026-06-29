@@ -17,7 +17,7 @@ class KafkaConfig:
     auto_offset_reset: str = "earliest"
 
     # Streaming settings
-    max_offsets_per_trigger: int = 1000
+    max_offsets_per_trigger: int = 10000
     checkpoint_location: str = "./checkpoints"
 
 
@@ -31,6 +31,19 @@ class MongoConfig:
     collection_realtime: str = "realtime_news"
     collection_errors: str = "error_logs"
 
+    # Write optimization settings to reduce MongoDB bottleneck
+    # Currently MongoDB writes consume ~50% of batch processing time
+    ordered_writes: bool = (
+        False  # Unordered writes for better throughput (parallel inserts)
+    )
+    max_batch_size: int = 1000  # MongoDB bulk write batch size
+    connection_pool_size: int = 50  # Connection pool size for concurrent writes
+    write_concern_w: int = 1  # Write concern: 1 = primary acknowledgment only
+    write_concern_journal: bool = False  # Don't wait for journal sync (faster)
+    retry_writes: bool = True  # Retry failed writes automatically
+    socket_timeout_ms: int = 60000  # Socket timeout (60 seconds)
+    connect_timeout_ms: int = 10000  # Connection timeout (10 seconds)
+
 
 @dataclass
 class SparkConfig:
@@ -42,7 +55,20 @@ class SparkConfig:
     # Memory settings
     driver_memory: str = "4g"
     executor_memory: str = "4g"
-    executor_cores: int = 2
+    executor_cores: int = 6
+
+    # NEW: Distributed processing settings
+    # Use multiple executors instead of single executor with many cores
+    # for better parallelism when not bottlenecked by I/O
+    num_executors: int = 3  # Distribute work across multiple executors
+    executor_cores_distributed: int = 2  # Fewer cores per executor
+
+    # NEW: Parallelism settings
+    default_parallelism: int = 6  # Match total available cores
+    sql_shuffle_partitions: int = 6  # Optimize shuffle operations
+
+    # Parallelism
+    shuffle_partitions: int = int(os.getenv("SPARK_SHUFFLE_PARTITIONS", "6"))
 
     # Spark packages
     packages: list = None

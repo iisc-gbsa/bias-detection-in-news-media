@@ -91,6 +91,14 @@ def clean_content(content):
     content = re.sub(
         r"(?<=[\w])(?=[\W])", " ", content
     )  # Add space before non-word characters
+    
+    PHRASES_TO_REMOVE = [
+        "1  2  3  View  all  Stories",
+        " Results  HPCL  Total  income  currency  refining  margin  company  hpcl  (What 's  moving  Sensex  and  Nifty  Track  latest  market  news  , stock  tips  , Budget  2025  , Share  Market  on  Budget  2025  and  expert  advice  , on  ETMarkets  . Also , ETMarkets .com  is  now  on  Telegram . For  fastest  news  alerts  on  financial  markets , investment  strategies  and  stocks  alerts , to  our  Telegram  feeds  .) to  and  read  the  Economic  Times  ePaper  Online .and  Sensex  Today  . Top  Trending  Stocks : SBI  Share  Price  , Axis  Bank  Share  Price  , HDFC  Bank  Share  Price  , Infosys  Share  Price  , Wipro  Share  Price  , NTPC  Share  Price  ... more  less  HPCL  Q  1  Results  HPCL  Total  income  currency  refining  margin  company  hpcl  (What 's  moving  Sensex  and  Nifty  Track  latest  market  news  , stock  tips  , Budget  2025  , Share  Market  on  Budget  2025  and  expert  advice  , on  ETMarkets  . Also , ETMarkets .com  is  now  on  Telegram . For  fastest  news  alerts  on  financial  markets , investment  strategies  and  stocks  alerts , to  our  Telegram  feeds  .) to  and  read  the  Economic  Times  ePaper  Online .and  Sensex  Today  . Top  Trending  Stocks : SBI  Share  Price  , Axis  Bank  Share  Price  , HDFC  Bank  Share  Price  , Infosys  Share  Price  , Wipro  Share  Price  , NTPC  Share  Price  ... more  less  Prime  Exclusives  Investment  Ideas  Stock  Report  Plus  ePaper  Wealth  Edition  GAIL  built  nation 's  gas  pipelines  for  4  decades . Now  it  is  battling  to  retain  the  edge  Nadella , Ellison , Pichai  have  all  jumped  on  the  AI  bandwagon . But  why  is  Buffett  staying  away ? Investors ' 4 -year  roller -coaster  ride  on  Paytm : How  secure  is  the  future ? As  Indian  IT  chases  the  hottest  AI  role , cost  becomes  a  question . Stock  Radar : GMR  Airports  stock  breaks  out  from  rectangular  pattern  to  hit  fresh  record  highs ; time  to  buy  or  book  profits ? Multibagger  or  IBC  - Part  33 : An  auto  ancillary  caught  between  ICE  engine  & EV  battery , will  management  be  able  to  sail  through ? 1  2  3  View  all  Stories",
+    ]
+    
+    for phrase in PHRASES_TO_REMOVE:
+        content = content.replace(phrase, "")
 
     return content.strip()
 
@@ -434,10 +442,32 @@ def save_progress(completed_dates, last_date):
         json.dump(progress, f, indent=2)
 
 
+def batch_check_existing_urls(collection, urls):
+    """
+    Check which URLs already exist in MongoDB using a single batch query.
+
+    Args:
+        collection: MongoDB collection instance
+        urls (list): List of URLs to check
+
+    Returns:
+        set: Set of URLs that already exist in the database
+    """
+    if not urls:
+        return set()
+
+    # Use $in operator to find all matching URLs in a single query
+    existing_docs = collection.find({"url": {"$in": urls}}, {"url": 1})
+    existing_urls = {doc["url"] for doc in existing_docs}
+
+    return existing_urls
+
+
 def process_single_article(article_info, collection, stats_lock, stats):
     """
     Process a single article: extract content and save to MongoDB.
     Thread-safe function for parallel processing.
+    Note: Duplicate check is now done in batch before threading.
 
     Args:
         article_info (dict): Article metadata (URL, date, etc.)
@@ -451,12 +481,6 @@ def process_single_article(article_info, collection, stats_lock, stats):
     article_url = article_info["Article Link"]
 
     try:
-        # Check if URL already exists in MongoDB
-        if collection.find_one({"url": article_url}):
-            with stats_lock:
-                stats["duplicates_skipped"] += 1
-            return (False, f"  Skipping duplicate: {article_url}")
-
         print(f"  Extracting content from: {article_url}")
 
         # Extract article content
@@ -474,6 +498,7 @@ def process_single_article(article_info, collection, stats_lock, stats):
 
             # Add metadata from URL scraping
             content["media_name"] = article_info["Media Name"]
+            content["published_date"] = article_info["Date"]
             content["scrape_date"] = article_info["Date"]
             content["scraped_at"] = datetime.now().isoformat()
 
@@ -577,7 +602,37 @@ def scrape_et_articles(start_year=2020, end_year=2024, use_cache=True, max_worke
                             save_progress(list(completed_dates), date_str)
                         continue
 
-                    # Process articles in parallel using ThreadPoolExecutor
+                    # Batch check for existing URLs to avoid duplicate processing
+                    print(f"  Checking for duplicates in batch...")
+                    all_urls = [article["Article Link"] for article in article_urls]
+                    existing_urls = batch_check_existing_urls(collection, all_urls)
+
+                    # Filter out articles that already exist
+                    new_articles = [
+                        article
+                        for article in article_urls
+                        if article["Article Link"] not in existing_urls
+                    ]
+
+                    duplicates_found = len(article_urls) - len(new_articles)
+                    if duplicates_found > 0:
+                        with stats_lock:
+                            stats["duplicates_skipped"] += duplicates_found
+                        print(
+                            f"  Found {duplicates_found} duplicates, processing {len(new_articles)} new articles"
+                        )
+
+                    if not new_articles:
+                        print(
+                            f"  All articles for {date_str} already exist in database"
+                        )
+                        # Mark date as completed
+                        if use_cache:
+                            completed_dates.add(date_str)
+                            save_progress(list(completed_dates), date_str)
+                        continue
+
+                    # Process only new articles in parallel using ThreadPoolExecutor
                     with ThreadPoolExecutor(max_workers=max_workers) as executor:
                         # Submit all article processing tasks
                         future_to_article = {
@@ -588,7 +643,7 @@ def scrape_et_articles(start_year=2020, end_year=2024, use_cache=True, max_worke
                                 stats_lock,
                                 stats,
                             ): article_info
-                            for article_info in article_urls
+                            for article_info in new_articles
                         }
 
                         # Process completed tasks as they finish
